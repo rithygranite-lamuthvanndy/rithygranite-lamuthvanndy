@@ -1,0 +1,2 @@
+[24-Jan-2019 12:11:34 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/inv_type_list/index.php on line 44
+[24-Jan-2019 12:13:44 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/inv_type_list/index.php on line 44

@@ -1,0 +1,3 @@
+[07-Feb-2019 16:49:39 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_add_tra_debit_credit/index.php on line 166
+[01-Mar-2019 11:29:52 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_add_tra_debit_credit/index.php on line 263
+[06-Apr-2019 13:31:24 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_add_tra_debit_credit/edit.php on line 410

@@ -1,0 +1,25 @@
+CREATE TABLE `tbl_fix_asset_list` (
+  `fl_id` int(11) NOT NULL AUTO_INCREMENT,
+  `dep_id` int(11) NOT NULL,
+  `fix_asset_name` varchar(255) NOT NULL,
+  `size_model` varchar(50) NOT NULL,
+  `unit` int(11) NOT NULL,
+  `physical_fa_cost` double NOT NULL,
+  `narrative_remarks` varchar(50) NOT NULL,
+  `fixed_asset_no` varchar(50) NOT NULL,
+  `purchased_date` date DEFAULT NULL,
+  `responsible_staff` varchar(50) NOT NULL,
+  `fix_asset_location` varchar(50) NOT NULL,
+  `photo_id` text NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `fl_note` text NOT NULL,
+  `date_audit` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT 'User Modified Time',
+  PRIMARY KEY (`fl_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `tbl_fixasset_department_list` (
+  `fix_id` int(11) NOT NULL AUTO_INCREMENT,
+  `fix_name` varchar(255) NOT NULL,
+  `fix_note` text NOT NULL,
+  PRIMARY KEY (`fix_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;

@@ -1,0 +1,3 @@
+[06-Nov-2018 13:47:15 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/layout/top_navigation.php on line 74
+[19-Nov-2018 16:04:07 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/layout/top_navigation.php on line 74
+[23-Nov-2018 00:56:44 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/layout/top_navigation.php on line 74

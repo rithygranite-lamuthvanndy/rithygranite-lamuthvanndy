@@ -1,0 +1,11 @@
+1. ចូលអ្នកបង្កើត Array មួយដែលមានផ្ទុក Datatype ដូចជា String, double, int, bool, Char, ........
+2. តើ Convert នៅក្នុង C# មានប៉ុន្មាន?
+3. ចូលអ្នក Convert String to int, double ដោយប្រើ TryParse
+4. ចូលអ្នក Convert String to int, double ដោយប្រើ Class Convert
+5. ចូលសរសេរកូដមួយដើម្បីទប់ស្កាត់នូវការ Error កើតឡើង រួចបង្ហាញ Message ទៅកាន់ User ថាការ Error នេះជា Error អ្វី?
+6. អ្វីទៅជា List? ចូលបង្កើត List មួយដើម្បីផ្ទុកធាតុនៃ Object មួយ។
+		
+		លំហាត់
+សរសេរកម្មវិធីដើម្បីគ្រប់គ្រង ហាងលក់កុំព្យូទ័រមួយកន្លែង ដែលមានព័ត៌មានដូចជា ID product, Name product, qty product, discount
+រួចធ្វើការ គណនាចំនួន Amount ដោយ Add ចូល ListView ហើយអាចអោយគេគេប្រែទំនិញ លុប ណឹងដាក់ចូលបន្លែមបាន។
+ដោយ add delete update ត្រូវសរសេរជា Function មួយៗ។

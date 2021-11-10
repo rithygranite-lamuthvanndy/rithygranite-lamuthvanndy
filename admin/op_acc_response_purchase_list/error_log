@@ -1,0 +1,4 @@
+[08-Apr-2018 13:50:41 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/entergroupcambod/public_html/admin/nationality_list/index.php on line 48
+[08-Apr-2018 13:50:53 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/entergroupcambod/public_html/admin/nationality_list/index.php on line 48
+[05-May-2018 09:29:40 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/entergroupcambod/public_html/admin/ct_category_list/index.php on line 47
+[12-Sep-2018 12:49:42 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_response_purchase_list/index.php on line 41

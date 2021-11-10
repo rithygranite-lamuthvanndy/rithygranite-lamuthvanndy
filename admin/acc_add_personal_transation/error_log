@@ -1,0 +1,350 @@
+[08-Apr-2018 13:50:41 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/entergroupcambod/public_html/admin/nationality_list/index.php on line 48
+[08-Apr-2018 13:50:53 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/entergroupcambod/public_html/admin/nationality_list/index.php on line 48
+[05-May-2018 09:29:40 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/entergroupcambod/public_html/admin/ct_category_list/index.php on line 47
+[02-Oct-2018 12:25:34 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 12:26:52 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 12:28:32 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 12:29:08 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 12:30:56 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 13:53:24 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 14:47:49 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 15:02:11 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 15:28:43 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 15:31:56 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 15:46:25 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 15:48:57 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 15:49:20 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 15:49:38 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 15:50:28 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[02-Oct-2018 16:31:39 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[03-Oct-2018 07:47:40 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[03-Oct-2018 08:45:31 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[03-Oct-2018 08:53:30 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[03-Oct-2018 08:56:41 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[03-Oct-2018 09:04:02 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[03-Oct-2018 09:09:28 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 174
+[13-Oct-2018 07:36:25 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[13-Oct-2018 07:37:54 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[13-Oct-2018 07:38:12 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[13-Oct-2018 07:39:24 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[13-Oct-2018 07:39:31 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[17-Oct-2018 09:16:41 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[17-Oct-2018 09:16:49 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[17-Oct-2018 09:25:48 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[17-Oct-2018 09:26:22 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[17-Oct-2018 09:26:25 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[17-Oct-2018 10:26:17 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[18-Oct-2018 03:53:22 UTC] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE), expecting ',' or ';' in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 227
+[18-Oct-2018 13:40:17 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, null given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 209
+[19-Oct-2018 04:28:53 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 04:28:56 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 04:28:57 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 04:29:06 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 04:29:08 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 04:29:17 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 04:29:21 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 04:29:32 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 04:30:05 UTC] PHP Parse error:  syntax error, unexpected '$bal' (T_VARIABLE) in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:32:56 Asia/Bangkok] PHP Fatal error:  Call to undefined function ciel() in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:17 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 11:33:51 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:31 Asia/Bangkok] PHP Fatal error:  Call to undefined function ciel() in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 12:25:45 Asia/Bangkok] PHP Warning:  ceil() expects exactly 1 parameter, 2 given in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 235
+[19-Oct-2018 05:42:24 UTC] PHP Parse error:  syntax error, unexpected 'round' (T_STRING) in /home/newsoft15/public_html/rithygranite/admin/acc_add_cash_record/index.php on line 233

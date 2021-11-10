@@ -1,0 +1,5 @@
+[18-Oct-2018 14:49:43 Asia/Bangkok] PHP Notice:  Undefined index: allowLog in /home/iiswebbase/public_html/demo/config/athonication.php on line 2
+[18-Oct-2018 14:49:43 Asia/Bangkok] PHP Notice:  Undefined index: user in /home/iiswebbase/public_html/demo/admin/user_position/permission.php on line 2
+[18-Oct-2018 14:49:43 Asia/Bangkok] PHP Notice:  Trying to get property of non-object in /home/iiswebbase/public_html/demo/admin/user_position/permission.php on line 2
+[18-Oct-2018 14:49:43 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/iiswebbase/public_html/demo/admin/user_position/permission.php on line 3
+[18-Oct-2018 14:49:43 Asia/Bangkok] PHP Notice:  Trying to get property of non-object in /home/iiswebbase/public_html/demo/admin/user_position/permission.php on line 38

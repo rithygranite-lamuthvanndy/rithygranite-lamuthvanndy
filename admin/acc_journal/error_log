@@ -1,0 +1,33 @@
+[08-Apr-2018 13:50:41 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/entergroupcambod/public_html/admin/nationality_list/index.php on line 48
+[08-Apr-2018 13:50:53 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/entergroupcambod/public_html/admin/nationality_list/index.php on line 48
+[05-May-2018 09:29:40 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/entergroupcambod/public_html/admin/ct_category_list/index.php on line 47
+[03-Apr-2019 19:20:45 Europe/London] PHP Warning:  require_once(../../plugin/Classes/PHPExcel.php): failed to open stream: No such file or directory in /home/newsoft15/public_html/rithygranite/admin/acc_journal/export_excell.php on line 14
+[03-Apr-2019 19:20:45 Europe/London] PHP Fatal error:  require_once(): Failed opening required '../../plugin/Classes/PHPExcel.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/newsoft15/public_html/rithygranite/admin/acc_journal/export_excell.php on line 14
+[05-Apr-2019 00:45:02 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 171
+[05-Apr-2019 00:45:23 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 172
+[05-Apr-2019 00:46:32 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 174
+[05-Apr-2019 00:46:51 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 174
+[05-Apr-2019 00:48:04 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 173
+[05-Apr-2019 00:48:54 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 173
+[05-Apr-2019 00:49:19 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 173
+[05-Apr-2019 00:58:22 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 173
+[05-Apr-2019 09:35:42 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 176
+[10-Apr-2019 16:25:21 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[10-Apr-2019 16:25:30 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 09:09:08 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 09:09:21 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 10:12:32 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 10:12:41 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 10:29:36 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 10:29:36 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:14:07 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:15:08 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:20:03 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:20:19 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:26:11 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:27:22 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:27:50 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:34:41 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:36:18 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:39:41 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106
+[12-Apr-2019 11:40:11 Asia/Bangkok] PHP Warning:  mysqli::query(): Empty query in /home/newsoft15/public_html/rithygranite/admin/acc_journal/index.php on line 106

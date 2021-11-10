@@ -1,0 +1,24 @@
+[30-Mar-2018 09:07:34 Asia/Bangkok] PHP Warning:  unlink(../../img/img_user/): Is a directory in /home/entergroupcambod/public_html/admin/user/delete.php on line 12
+[30-Mar-2018 09:07:36 Asia/Bangkok] PHP Warning:  unlink(../../img/img_user/): Is a directory in /home/entergroupcambod/public_html/admin/user/delete.php on line 12
+[30-Mar-2018 09:07:38 Asia/Bangkok] PHP Warning:  unlink(../../img/img_user/): Is a directory in /home/entergroupcambod/public_html/admin/user/delete.php on line 12
+[02-Oct-2018 11:26:55 Asia/Bangkok] PHP Warning:  unlink(../../file/file_user/): Is a directory in /home/iiswebbase/public_html/demo/admin/user_list/upload_file.php on line 16
+[13-Oct-2018 11:18:43 Asia/Bangkok] PHP Notice:  Undefined index: allowLog in /home/iiswebbase/public_html/demo/config/athonication.php on line 2
+[13-Oct-2018 11:18:43 Asia/Bangkok] PHP Notice:  Undefined index: user in /home/iiswebbase/public_html/demo/admin/user_list/permission.php on line 2
+[13-Oct-2018 11:18:43 Asia/Bangkok] PHP Notice:  Trying to get property of non-object in /home/iiswebbase/public_html/demo/admin/user_list/permission.php on line 2
+[13-Oct-2018 11:18:43 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/iiswebbase/public_html/demo/admin/user_list/permission.php on line 3
+[13-Oct-2018 11:18:43 Asia/Bangkok] PHP Notice:  Trying to get property of non-object in /home/iiswebbase/public_html/demo/admin/user_list/permission.php on line 32
+[13-Oct-2018 15:25:35 Asia/Bangkok] PHP Notice:  Undefined index: allowLog in /home/iiswebbase/public_html/demo/config/athonication.php on line 2
+[13-Oct-2018 15:25:35 Asia/Bangkok] PHP Notice:  Undefined index: user in /home/iiswebbase/public_html/demo/admin/layout/top_navigation.php on line 8
+[13-Oct-2018 15:25:35 Asia/Bangkok] PHP Notice:  Trying to get property of non-object in /home/iiswebbase/public_html/demo/admin/layout/top_navigation.php on line 8
+[13-Oct-2018 15:25:35 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/iiswebbase/public_html/demo/admin/layout/top_navigation.php on line 12
+[13-Oct-2018 15:25:35 Asia/Bangkok] PHP Notice:  Undefined index: user in /home/iiswebbase/public_html/demo/admin/layout/header.php on line 88
+[13-Oct-2018 15:25:35 Asia/Bangkok] PHP Notice:  Trying to get property of non-object in /home/iiswebbase/public_html/demo/admin/layout/header.php on line 88
+[16-Oct-2018 09:49:45 Asia/Bangkok] PHP Warning:  copy(tmp_75.png): failed to open stream: No such file or directory in /home/iiswebbase/public_html/demo/admin/user_list/add.php on line 33
+[18-Oct-2018 10:09:54 Asia/Bangkok] PHP Notice:  Undefined index: allowLog in /home/iiswebbase/public_html/demo/config/athonication.php on line 2
+[18-Oct-2018 10:09:54 Asia/Bangkok] PHP Notice:  Undefined index: user in /home/iiswebbase/public_html/demo/admin/layout/top_navigation.php on line 8
+[18-Oct-2018 10:09:54 Asia/Bangkok] PHP Notice:  Trying to get property of non-object in /home/iiswebbase/public_html/demo/admin/layout/top_navigation.php on line 8
+[18-Oct-2018 10:09:54 Asia/Bangkok] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given in /home/iiswebbase/public_html/demo/admin/layout/top_navigation.php on line 12
+[18-Oct-2018 10:09:54 Asia/Bangkok] PHP Notice:  Undefined index: user in /home/iiswebbase/public_html/demo/admin/layout/header.php on line 88
+[18-Oct-2018 10:09:54 Asia/Bangkok] PHP Notice:  Trying to get property of non-object in /home/iiswebbase/public_html/demo/admin/layout/header.php on line 88
+[18-Oct-2018 10:09:54 Asia/Bangkok] PHP Notice:  Undefined index: user in /home/iiswebbase/public_html/demo/admin/user_list/add.php on line 26
+[18-Oct-2018 10:09:54 Asia/Bangkok] PHP Notice:  Trying to get property of non-object in /home/iiswebbase/public_html/demo/admin/user_list/add.php on line 26

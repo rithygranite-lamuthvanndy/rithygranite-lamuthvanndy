@@ -1,0 +1,37 @@
+*{ font-family: 'khmer os content'; font-size: 12px; }
+@media print {
+    #my_green{
+        background-color: #E2EFDA !important;
+        -webkit-print-color-adjust: exact; 
+    }
+    #my_pink{
+        background-color: #E7E6E6 !important;
+        -webkit-print-color-adjust: exact; 
+    }
+    #my_blue{
+        background-color: #D9E1F2 !important;
+        -webkit-print-color-adjust: exact; 
+    }
+    #table_1 tr >td,#table_1 tr >th{
+      border-collapse: collapse;
+      border: 1px black solid;
+      padding:15px;
+    }
+    tr:nth-of-type(5) td:nth-of-type(1) {
+      visibility: hidden;
+    }
+    .rotate {
+      transform: rotate(-90.0deg);
+      white-space: nowrap;
+    }
+    .par_rotate{
+        text-align: center;
+        max-width: 30px;
+        width: 10px;
+    }
+    #table_2 tr >td,#table_2 tr >th{
+        padding: 10px;
+        border-collapse: collapse;
+        border: 1px black solid;
+    }
+}

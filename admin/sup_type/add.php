@@ -1,0 +1,102 @@
+<?php 
+    $menu_active =130;
+    $left_active =0;
+    $layout_title = "Add Page";
+    include_once '../../config/database.php';
+    include_once '../../config/athonication.php';
+    include_once '../layout/header.php';
+?>
+
+
+
+<?php 
+    if(isset($_POST['btn_submit'])){
+        $v_supplier = @$_POST['txt_type'];
+        $v_note = @$_POST['txt_note'];
+        $v_user_id = @$_SESSION['user']->user_id;
+        
+
+        $query_add = "INSERT INTO tbl_sup_type (
+                supct_name,
+                supct_note,
+                user_id
+                
+                ) 
+            VALUES(
+                '$v_supplier',
+                '$v_note',
+                '$v_user_id'
+                )";
+        if($connect->query($query_add)){
+            $sms = '<div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Successfull!</strong> Data inserted ...
+            </div>'; 
+        }else{
+            $sms = '<div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Error!</strong> '.mysqli_error($connect).'
+            </div>';   
+        }
+    }
+
+ ?>
+
+
+<div class="portlet light bordered">
+    <div class="row">
+        <div class="col-xs-12">
+            <?= @$sms ?>
+            <h2><i class="fa fa-plus-circle fa-fw"></i>Create Record</h2>
+        </div>
+    </div>
+    <div class="portlet-body">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Input Information</h3>
+            </div>
+            <div class="panel-body">
+                 <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="form-body">
+
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group form-md-line-input">
+                                    <input type="text" class="form-control" name="txt_type"  autocomplete="off">
+                                    <label>Type :
+                                        <span class="required" aria-required="true"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group form-md-line-input">
+                                    <input type="text" class="form-control" name="txt_note"  autocomplete="off">
+                                    <label>Note :
+                                        <span class="required" aria-required="true"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" name="btn_submit" class="btn blue"><i class="fa fa-save fa-fw"></i>Save</button>
+                                <a href="index.php" class="btn red"><i class="fa fa-undo fa-fw"></i>Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </form><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<?php include_once '../layout/footer.php' ?>

@@ -1,0 +1,46 @@
+/**{  font-family: 'Khmer OS'; */
+/*    font-size: 100px!important;*/
+/*}*/
+@media print {
+    body{border: 2px solid black; padding: 10px;}
+    #my_first_table tr>th{
+        -webkit-print-color-adjust: exact;
+        background-color: #2F75B5!important;
+        -webkit-background-color: #2F75B5!important;
+        color: #fff!important;
+        -webkit-color: #fff!important;
+    }
+    #my_first_table tr:last-child >th,#my_first_table tr:nth-last-child(2) >th{
+        -webkit-print-color-adjust: exact;
+        background-color: #DDEBF7!important;
+        color: #000!important;
+        -webkit-background-color: #DDEBF7!important;
+    }
+    .sign div{
+        display: inline-block;
+        margin: 2.5px; width: 19%;
+    }
+    table {
+        border: 2px solid black!important;
+        border-collapse: collapse;
+    }
+
+    table, th, td{
+        border: 1px solid black;
+    }
+    #myTable2{border: 2px solid black;}
+    #myTable2 tr >th ,#myTable2 tr >td{
+        border: 1px solid black;
+    }
+    #myTable2 tbody >tr >td .row{
+       /* padding-right: 100px;
+        margin: 5px;
+        display: inline!important;*/
+    }
+    /*#myTable2 tr >td >p:last-child{
+        position: relative;
+        top: -30px;
+        left: 100px;
+        margin-bottom: -20px;
+    }*/
+}
