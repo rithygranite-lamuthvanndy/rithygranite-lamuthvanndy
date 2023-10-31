@@ -11,7 +11,7 @@
 <div class="portlet light bordered">
     <div class="row">
         <div class="col-xs-12">
-            <h2><i class="fa fa-fw fa-map-marker"></i> Salary Minus List</h2>
+            <h1 style="font-family:'Khmer OS';"><i class="fa fa-fw fa-map-marker"></i> តារាងប្រភេទជ័រកៅស៊ូ</h1>
         </div>
     </div>
     <br>
@@ -29,10 +29,10 @@
                 <thead>
                     <tr role="row" class="text-center">
                         <th>N&deg;</th>
-                        <th>Account Name</th>
-                        <th>Account Type</th>
-                        <th></th>
-                        <th></th>
+                        <th>ឈ្មោះជ័រ</th>
+                        <th>កំរិត</th>
+                        <th>គិតជា</th>
+                        <th>សំគាល់</th>
                         <th></th>
                         <th style="min-width: 100px;" class="text-center">Action <i class="fa fa-cog fa-spin"></i></th>
                     </tr>
@@ -42,19 +42,17 @@
                         $i = 0;
                         $get_data = $connect->query("SELECT 
                                *
-                            FROM   tbl_acc_type_account AS A  
-                            LEFT JOIN tbl_acc_main_account AS MA ON A.accta_main_account=MA.accma_id
-                            ORDER BY accta_id DESC");
+                            FROM   tbl_hr_item_rubber ORDER BY ir_id DESC");
                         while ($row = mysqli_fetch_object($get_data)) {
                             echo '<tr>';
                                 echo '<td>'.(++$i).'</td>';
-                                echo '<td>'.$row->accta_type_account.'</td>';
-                                echo '<td>'.$row->accma_main_account.'</td>';
-                                echo '<td>'.'</td>';
-                                echo '<td>'.'</td>';
+                                echo '<td>'.$row->ir_name.'</td>';
+                                echo '<td>'.$row->ir_type.'</td>';
+                                echo '<td>'.$row->ir_unit.'</td>';
+                                echo '<td>'.$row->ir_note.'</td>';
                                 echo '<td>'.'</td>';
                                 echo '<td class="text-center">';
-                                    echo '<a href="edit.php?edit_id='.$row->accta_id.'" class="btn btn-xs btn-warning" title="edit"><i class="fa fa-edit"></i></a> ';
+                                    echo '<a href="edit.php?edit_id='.$row->ir_id.'" class="btn btn-xs btn-warning" title="edit"><i class="fa fa-edit"></i></a> ';
                                    //echo '<a href="delete.php?del_id='.$row->accta_id.'" onclick="return confirm(\'Are you sure to delete this?\')" class="btn btn-xs btn-danger" title="delete"><i class="fa fa-trash"></i></a> ';
 
                                 echo '</td>';

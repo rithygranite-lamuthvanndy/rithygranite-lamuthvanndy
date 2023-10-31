@@ -102,7 +102,7 @@
                     '$v_purchased_date',
                     '$v_responsible_staff',
                     '$v_fix_asset_location',
-                    'no_photo.png',
+                    '$image',
                     '$v_fl_note',
                     '$v_user_id'
                     )";
@@ -232,6 +232,7 @@
                                 </div>
                             </div>
                         </div>
+
 
                     </div>
                         

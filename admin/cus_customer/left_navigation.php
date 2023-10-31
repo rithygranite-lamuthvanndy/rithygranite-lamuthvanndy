@@ -165,6 +165,24 @@
                     <span class="title">Project List</span>
                 </a>
             </li>
+            <li class="nav-item start ">
+                <a href="../cus_sale_temp/index.php" class="nav-link nav-toggle">
+                    <i class="fa fa-list"></i>
+                    <span class="title">Sale Template</span>
+                </a>
+            </li>
+            <li class="nav-item start ">
+                <a href="../cus_estimate_temp/index.php" class="nav-link nav-toggle">
+                    <i class="fa fa-list"></i>
+                    <span class="title">Estimate Template</span>
+                </a>
+            </li>
+            <li class="nav-item start ">
+                <a href="../cus_estimate_temp/index.php" class="nav-link nav-toggle">
+                    <i class="fa fa-list"></i>
+                    <span class="title">Cstomer Message</span>
+                </a>
+            </li>
             <!-- <li class="nav-item start ">
                 <a href="../cus_project/index.php" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>

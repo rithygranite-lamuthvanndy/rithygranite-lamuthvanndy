@@ -35,7 +35,12 @@
                     <tr role="row" class="text-center">
                         <th>N&deg;</th>
                         <th>Code</th>
-                        <th>Name Type</th>
+                        <th>Manufacturer's Part Num</th>
+                        <th>Name Khmer</th>
+                        <th>Name English</th>
+                        <th>Name Vietname</th>
+                        <th>Description</th>
+                        <th>Unit Price</th>
                         <th>Note</th>
                         <th style="min-width: 100px;" class="text-center">Action <i class="fa fa-cog fa-spin"></i></th>
                     </tr>
@@ -46,12 +51,18 @@
                         $get_data = $connect->query("SELECT 
                                *
                             FROM tbl_inv_type_make AS A 
+                            LEFT JOIN tbl_acc_chart_account as B on A.tm_account=B.accca_id
                             ORDER BY tm_name ASC");
                         while ($row = mysqli_fetch_object($get_data)) {
                             echo '<tr>';
                                 echo '<td>'.(++$i).'</td>';
                                 echo '<td>'.$row->tm_code.'</td>';
+                                echo '<td>'.$row->tm_manu_num.'</td>';
+                                echo '<td>'.$row->tm_name_kh.'</td>';
+                                echo '<td>'.$row->tm_name_en.'</td>';
                                 echo '<td>'.$row->tm_name.'</td>';
+                                echo '<td>'.$row->tm_description.'<br><small>'.$row->accca_number.' = '.$row->accca_account_name.'</small></td>';
+                                echo '<td class="text-right">'.number_format($row->tm_unit_price,2).' '.$row->tm_unit_measure.'</td>';
                                 echo '<td>'.$row->tm_note.'</td>';
                                 echo '<td class="text-center">';
                                     echo '<a href="edit.php?edit_id='.$row->tm_id.'&view='.@$_GET['view'].'" class="btn btn-xs btn-warning" title="edit"><i class="fa fa-edit"></i></a> ';

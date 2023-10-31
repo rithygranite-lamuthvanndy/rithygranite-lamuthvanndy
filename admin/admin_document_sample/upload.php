@@ -58,7 +58,7 @@
     <div class="row">
         <div class="col-xs-12">
             <?= @$sms ?>
-            <h2><i class="fa fa-plus-circle fa-fw"></i>Edit Record</h2>
+            <h2><i class="fa fa-plus-circle fa-fw"></i>Upload File PDF</h2>
         </div>
     </div>
     <br>
@@ -85,7 +85,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <div class="form-group">
-                                    <label>Upload File : </label>
+                                    <label>Upload File PDF : </label>
                                     <input type="file" class="form-control datepicker" name="txt_file" placeholder="choose file" required="">
                                 </div>
                                 

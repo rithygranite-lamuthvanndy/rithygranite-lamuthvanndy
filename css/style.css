@@ -20,7 +20,7 @@ a:visited{ text-decoration: none; }
 /*style header*/
 header{ min-height: 423px; position: relative;}
 header div.logo img{ padding: 14px 25px; }
-header nav{ z-index: 1; width: 1144px; position: relative; margin: auto; background: rgb(50, 76, 113); height: 80px; max-height: 80px; }
+header nav{ z-index: 1; width: 1144px; position: relative; margin: auto; background: rgb(3, 75, 18); height: 80px; max-height: 80px; }
 header nav > ul > li{ display: inline-block; height: 80px!important; position: relative;}
 header nav > ul > li > a{ cursor: pointer; height: 80px; padding: 25px 0px; display: block; margin-right: 28px; font-family: 'robo_regular'; font-size: 18px; color: #ddd; }
 header nav > ul > li:hover > a{ color: #fff; text-decoration: none; }
@@ -111,7 +111,7 @@ ul.pagination li.active a{ background-color: #324c71!important; }
 
 
 /*style footer*/
-footer{ background-color: #111347; padding-top: 50px; padding-bottom: 50px; }
+footer{ background-color: #034B12; padding-top: 50px; padding-bottom: 50px; }
 footer p{ text-align: center; color: #fff; font-family: 'robo_light';  font-size: 14px; }
 footer a{ color: #bbb; }
 footer a:hover{ color: #eee; }
@@ -165,6 +165,7 @@ footer a > i{ width: 40px; height: 40px; font-size:20px!important; }
 .content_items div.panel-body table span.value{
 	font-size: 15px; color: #fff; font-weight: bolder;
 }
+
 
 
 

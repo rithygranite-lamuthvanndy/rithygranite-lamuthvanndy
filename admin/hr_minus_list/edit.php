@@ -10,19 +10,21 @@
 
 <?php 
     if(isset($_POST['btn_submit'])){
-        
         $v_id = @$_POST['txt_id'];
         $v_name = @$_POST['txt_name'];
+        $v_type = @$_POST['txt_type'];
+        $v_unit = @$_POST['txt_unit'];
         $v_note = @$_POST['txt_note'];
-        $v_user_id = @$_SESSION['user']->user_id;
         
        
-        $query_update = "UPDATE `tbl_com_depatment` 
+        $query_update = "UPDATE `tbl_hr_item_rubber` 
             SET 
-                `comdep_name`='$v_name',
-                `comdep_note`='$v_note',
-                `user_id`='$v_user_id'
-            WHERE `comdep_id`='$v_id'";
+                `ir_name`='$v_name',
+                `ir_type`='$v_type',
+                `ir_unit`='$v_unit',
+                `ir_note`='$v_note'
+                
+            WHERE `ir_id`='$v_id'";
             
        
         if($connect->query($query_update)){
@@ -41,7 +43,7 @@
 
 // get old data 
     $edit_id = @$_GET['edit_id'];
-    $old_data = $connect->query("SELECT * FROM tbl_com_depatment WHERE comdep_id='$edit_id'");
+    $old_data = $connect->query("SELECT * FROM tbl_hr_item_rubber WHERE ir_id='$edit_id'");
     $row_old_data = mysqli_fetch_object($old_data);
 
 
@@ -52,7 +54,7 @@
     <div class="row">
         <div class="col-xs-12">
             <?= @$sms ?>
-            <h2><i class="fa fa-plus-circle fa-fw"></i>Edit Record</h2>
+            <h2><i class="fa fa-plus-circle fa-fw"></i>បង្កើតប្រភេទជ័រ</h2>
         </div>
     </div>
     <br>
@@ -73,20 +75,28 @@
             </div>
             <div class="panel-body">
                 <form action="#" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="txt_id" value="<?= $row_old_data->comdep_id ?>">
+                    <input type="hidden" name="txt_id" value="<?= $row_old_data->ir_id ?>">
                     <div class="form-body">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                <label>Department :
+                                <label>Rubber Name / ឈ្មោះជ័រ
                                     <span class="required" aria-required="true">*</span>
                                 </label>
-                                <input type="text" value="<?= $row_old_data->comdep_name ?>" name="txt_name" class="form-control" required="">
+                                <input type="text" name="txt_name" class="form-control" required="" value="<?= $row_old_data->ir_name ?>">
+                                <label>Type / កំរិត
+                                    <span class="required" aria-required="true">*</span>
+                                </label>
+                                <input type="text" name="txt_type" class="form-control" required="" value="<?= $row_old_data->ir_type ?>">
+                                <label>Unite / គិតជា
+                                    <span class="required" aria-required="true">*</span>
+                                </label>
+                                <input type="text" name="txt_unit" class="form-control" required="" value="<?= $row_old_data->ir_unit ?>">
                                 <br>
 
-                                <label>Note :
+                                <label>Note /ចំណាំ
                                     <span class="required" aria-required="true">*</span>
                                 </label>
-                                <textarea name="txt_note" rows="4" class="form-control"><?= $row_old_data->comdep_note ?></textarea>
+                                <textarea name="txt_note" rows="10" class="form-control"><?= $row_old_data->ir_note ?></textarea>
                                 <br>
                             </div>
                         </div>

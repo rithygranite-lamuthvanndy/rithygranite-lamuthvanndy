@@ -1,7 +1,7 @@
 <?php 
     $menu_active =145;
     $dropdown=false;
-    $left_menu_active=2;
+    $left_menu_active=3;
     $layout_title = "Welcome Page";
     include_once '../../config/database.php';
     include_once '../../config/athonication.php';
@@ -52,7 +52,7 @@ else{
 <div class="portlet light bordered">
     <div class="row">
         <div class="col-xs-12">
-            <h2 style="font-family: 'Khmer OS Muol Light';"><i class="fa fa-fw fa-map-marker"></i> របាយការណ៍ថ្មស្លាបដាប់បាន ប្រចាំថ្ងៃក្នុងរោងចក្រ​ </h2>
+            <h2 style="font-family: 'Khmer OS Muol Light';"><i class="fa fa-fw fa-map-marker"></i> របាយការណ៍ថ្មស្លាបមិនទាន់ប៉ូលា ប្រចាំថ្ងៃក្នុងរោងចក្រ​ </h2>
         </div>
     </div>
     <br>

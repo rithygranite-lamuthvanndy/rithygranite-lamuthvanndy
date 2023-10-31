@@ -2,6 +2,6 @@
 <?php 
 	if(@$_GET['del_id'] != ""){
 		$del_id = @$_GET['del_id'];
-		$connect->query("DELETE FROM  tbl_inv_counter_list WHERE id='$del_id'");
+		$connect->query("DELETE FROM  tbl_inv_type_make WHERE tm_id='$del_id'");
 	}
 ?>

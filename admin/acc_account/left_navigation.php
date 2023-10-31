@@ -41,6 +41,17 @@
                     <span class="badge badge-info"><?= $count_cash_record ?></span>
                 </a>
             </li>
+            <li class="nav-item" style="font-family: 'Khmer OS';">
+                <a href="../acc_add_expenses/index.php" class="nav-link">
+                    <i class="fa fa-list"></i>
+                    <?php
+                    $sql = $connect->query("SELECT accdr_date FROM tbl_acc_cash_record WHERE DATE_FORMAT(accdr_date,'%Y-%m-%d')='$current_date' AND status=1");
+                    $count_cash_record = mysqli_num_rows($sql);
+                    ?>
+                    <span class="title">Expenses ចំណាយ </span>
+                    <span class="badge badge-info"><?= $count_cash_record ?></span>
+                </a>
+            </li>
             <li class="nav-item start " style="font-family: 'khmer os';">
                 <a href="../acc_none_sale_revenue/" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
@@ -75,6 +86,16 @@
                 <a href="../acc_opening_bal/" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
                     <span class="title">Openning Balance </span>
+                    <?php
+                    $sql = $connect->query("SELECT date_audit FROM tbl_acc_open_bal WHERE DATE_FORMAT(date_audit,'%Y-%m-%d')='$now'");
+                    ?>
+                    <span class="badge badge-danger"><?= mysqli_num_rows($sql) ?></span>
+                </a>
+            </li>
+            <li class="nav-item start " style="font-family: 'khmer os';">
+                <a href="../acc_add_banking/" class="nav-link nav-toggle">
+                    <i class="fa fa-list"></i>
+                    <span class="title">Banking </span>
                     <?php
                     $sql = $connect->query("SELECT date_audit FROM tbl_acc_open_bal WHERE DATE_FORMAT(date_audit,'%Y-%m-%d')='$now'");
                     ?>

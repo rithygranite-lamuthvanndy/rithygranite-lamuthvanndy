@@ -72,7 +72,7 @@
                         <th class="text-center">បរិមាណ <br> QUANTITY</th>
                         <th class="text-center">តម្លៃ <br> PRICE</th>
                         <th class="text-center">បញ្ចុះតម្លៃ <br> DISCOUNT</th>
-                        <th class="text-center">Amount</th>
+                        <th class="text-center">សរុបតម្លៃ <br>Amount</th>
                     </tr>
                 </thead>
                 <tbody>

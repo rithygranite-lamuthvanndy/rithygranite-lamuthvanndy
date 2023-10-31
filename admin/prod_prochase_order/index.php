@@ -1,22 +1,23 @@
 <?php 
-    $layout_title = "Welcome";
+    
+    $left_menu_active = 2;
     $menu_active =11;
-    $left_menu =4;
+    $left_menu =2;
     $layout_title = "Welcome to Page";
     include_once '../../config/database.php';
     include_once '../../config/athonication.php';
     include_once '../layout/header.php';
 ?>
 
-
 <div class="portlet light bordered">
     <div class="row">
-        <div class="col-xs-12">
-            <h2 style="font-family:'Khmer OS';"><i class="fa fa-fw fa-map-marker"></i> តារាងារតម្លៃថ្មសម្រាប់អតិថិជន</h2>
-            <h2>PURCHASE ORDER - THÔNG BÁO SẢN XUẤT THEO ĐƠN HÀNG</h2>
+        <div class="col-xs-4">
+            <h2 style="font-family:'Khmer OS';"><i class="fa fa-fw fa-map-marker"></i> តារាងកម្មង់ពី ការិយាល័យ មករោងចក្រ</h2>
+        </div>
+        <div class="col-xs-8 text-right">
+            <h2>PURCHASE ORDER</h2><p style="font-family:'Times New Roman';">THÔNG BÁO SẢN XUẤT THEO ĐƠN HÀNG</p>
         </div>
     </div>
-    <br>
     <div class="">
         <div class="caption font-dark">
             <a href="add.php" id="sample_editable_1_new" class="btn green"> Add New
@@ -28,10 +29,11 @@
     <div class="portlet-body">
         <div id="sample_1_wrapper" class="dataTables_wrapper">
             <table class="table table-striped table-bordered table-hover dataTable dtr-inline collapsed" id="sample_1" role="grid" aria-describedby="sample_1_info">
-                <thead>
+                <thead style="background-color: #CCFFFF;">
                     <tr role="row" class="text-center">
                         <th rowspan="2" style="vertical-align: middle; text-align: center;">N&deg;</th>
                         <th rowspan="2" style="vertical-align: middle; text-align: center;">Date Record </th>
+                        <th rowspan="2" style="vertical-align: middle; text-align: center;">Code PO </th>
                         <th rowspan="2" style="vertical-align: middle; text-align: center;">Customer Code</th>
                         <th rowspan="2" style="vertical-align: middle; text-align: center;">Customer Name</th>
                         <th colspan="2" style="vertical-align: middle; text-align: center;">Description of Goods<br> 
@@ -55,23 +57,37 @@
                     <?php
                         $i = 0;
                         $get_data = $connect->query("SELECT 
-                               *
-                            FROM   tbl_pj_project_initiation AS A  
-                            LEFT JOIN tbl_pj_leader AS B ON B.dlead_id = A.pini_leader
-                            LEFT JOIN tbl_pj_project_title AS C ON C.pti_id=A.pini_project_title
-                            ORDER BY pini_id DESC");
+                               *, (select count(pol_id) from tbl_prod_add_po_list where pol_po_id=po_id) as countid, (select dv_id from tbl_prod_dv where dv_po_id=po_id) as dv_po_lo,(select dv_no from tbl_prod_dv where dv_po_id=po_id) as dv_po_no
+                            FROM   tbl_prod_add_po_list AS A  
+                            LEFT JOIN tbl_prod_add_po AS B ON B.po_id = A.pol_po_id
+                            LEFT JOIN tbl_cus_customer_info AS C ON C.cussi_id=B.po_customer
+                            LEFT JOIN tbl_inv_type_make AS D ON D.tm_id = A.pol_feature
+                            LEFT JOIN tbl_prod_add_quote AS QT ON QT.qt_id = B.po_quota_code
+                            ORDER BY pol_id DESC");
                         while ($row = mysqli_fetch_object($get_data)) {
                             echo '<tr>';
                                 echo '<td>'.(++$i).'</td>';
-                                echo '<td>'.$row->pini_date_record.'</td>';
-                                echo '<td>'.$row->pti_project_title.'</td>';
-                                echo '<td>'.$row->pini_project_sub.'</td>';
-                                echo '<td>'.$row->pini_description.'</td>';
-                                echo '<td>'.$row->dlead_name.'</td>';
-                                echo '<th class="text-center">'.number_format($row->pini_amount,2).'</th>';
-                                echo '<td>'.$row->pini_note.'</td>';
+                                echo '<td>'.$row->po_date.'</td>';
+                                echo '<td>'.$row->po_no.'</td>';
+                                if($row->dv_po_lo>0){
+                                echo '<td>'.$row->cus_code.'<br> <a target="_blank" href="print_dv.php?print_id=' . $row->po_id . '" class="btn btn-info btn-xs"><i class="fa fa-truck"> ' . $row->dv_po_no . '</i></a></td>';    
+                                }else{
+                                    echo '<td>'.$row->cus_code.'</td>';
+                                }
+                                
+                                echo '<td>'.$row->cussi_name.'<br><small>'.$row->qt_no.'</small></td>';
+                                echo '<td>'.$row->pol_name.'</td>';
+                                echo '<td>'.$row->tm_code.'<br><small>'.$row->tm_name_kh.'</small></td>';
+                                echo '<td>'.$row->pol_length.'</td>';
+                                echo '<td>'.$row->pol_width.'</td>';
+                                echo '<td>'.$row->pol_thickness.'</td>';
+                                echo '<td>'.$row->pol_pcs_slab.'</td>';
+                                echo '<th class="text-center">'.number_format($row->pol_m2,2).'</th>';
+                                echo '<td>'.$row->pol_note.'</td>';
                                 echo '<td class="text-center">';
-                                    echo '<a href="edit.php?edit_id='.$row->pini_id.'" class="btn btn-xs btn-warning" title="edit"><i class="fa fa-edit"></i></a> ';
+                                    echo '<a href="edit.php?edit_id='.$row->po_id.'" class="btn btn-xs btn-warning" title="edit"><i class="fa fa-edit"></i></a> ';
+                                    echo '<a href="delete.php?del_id='.$row->pol_id.'" class="btn btn-xs btn-warning" title="delete"><i class="fa fa-trash"></i></a> ';
+                                    echo '<a target="_blank" href="print.php?print_id=' . $row->po_id . '" class="btn btn-xs btn-info" title="edit"><i class="fa fa-print"></i></a> ';
                                 echo '</td>';
                             echo '</tr>';
                         }
@@ -88,3 +104,4 @@
 
 
 <?php include_once '../layout/footer.php' ?>
+

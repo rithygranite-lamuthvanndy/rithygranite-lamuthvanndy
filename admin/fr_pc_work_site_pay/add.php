@@ -345,6 +345,7 @@ if (isset($_POST['btn_submit'])) {
 </div>
 <script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
+    
     var index_row = 1;
     $('#add_more').click(function() {
         $('#myTable').append('<tr data-row-id="' + (++index_row) + '">' + $('.my_form_base').html() + '</tr>');

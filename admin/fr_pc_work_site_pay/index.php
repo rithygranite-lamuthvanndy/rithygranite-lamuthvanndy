@@ -12,19 +12,17 @@
         $v_start=@$_POST['txt_date_start'];
         $v_end=@$_POST['txt_date_end'];
         $get_data=$connect->query("SELECT 
-                            A.*,sum(B.apl_amount) as tot_amount
-                        FROM tbl_frpc_add_pay AS A 
-                        LEFT JOIN tbl_frpc_add_pay_list AS B ON A.ap_id=B.apl_ap_id 
-                            WHERE DATE_FORMAT(A.ap_date,'%Y-%m-%d') BETWEEN '$v_start' AND '$v_end'
+                            *,(select sum(apl_amount) from tbl_frpc_add_pay_list WHERE apl_ap_id=ap_id) as tot_amount
+                        FROM tbl_frpc_add_pay 
+                            WHERE DATE_FORMAT(ap_date,'%Y-%m-%d') BETWEEN '$v_start' AND '$v_end'
                          ORDER BY ap_id ASC");
     }
     else{
         $v_current_year_month = date('Y-m');
         $get_data=$connect->query("SELECT 
-                            *,sum(B.apl_amount) as tot_amount
-                        FROM tbl_frpc_add_pay AS A 
-                        LEFT JOIN tbl_frpc_add_pay_list AS B ON A.ap_id=B.apl_ap_id
-                            WHERE DATE_FORMAT(A.ap_date,'%Y-%m')='$v_current_year_month'
+                            *,(select sum(apl_amount) from tbl_frpc_add_pay_list WHERE apl_ap_id=ap_id) as tot_amount
+                        FROM tbl_frpc_add_pay
+                            WHERE DATE_FORMAT(ap_date,'%Y-%m')='$v_current_year_month'
                          ORDER BY ap_id ASC");
         $v_start =$v_end=date("Y-m-d");
     }

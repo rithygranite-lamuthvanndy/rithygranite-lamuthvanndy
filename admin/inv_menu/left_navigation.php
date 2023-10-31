@@ -64,7 +64,7 @@
                 </a>
             </li>
             <li class="nav-item start <?= (@$left_menu_active == 2) ? 'active' : '' ?>">
-                <a href="../inv_2_stock_slab_no_polish/" class="nav-link nav-toggle">
+                <a href="../inv_2_stock_slab/" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
                     <span class="title">2-ស្តុកថ្មសន្លឹកដាក់</span>
                 </a>
@@ -78,13 +78,13 @@
             <li class="nav-item start <?= (@$left_menu_active == 3) ? 'active' : '' ?>">
                 <a href="../inv_2_stock_slab_no_polish/" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
-                    <span class="title">2-ស្តុកថ្មសន្លឹកមិនទាន់ប៉ូលា</span>
+                    <span class="title">3-ស្តុកថ្មសន្លឹកមិនទាន់ប៉ូលា</span>
                 </a>
             </li>
-            <li class="nav-item start <?= (@$left_menu_active == 3) ? 'active' : '' ?>">
-                <a href="#" class="nav-link nav-toggle">
+            <li class="nav-item start <?= (@$left_menu_active == 4) ? 'active' : '' ?>">
+                <a href="../inv_3_stock_slab_polish" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
-                    <span class="title">3-ស្តុកថ្មសន្លឹកប៉ូលា</span>
+                    <span class="title">4-ស្តុកថ្មសន្លឹកប៉ូលា</span>
                 </a>
             </li>
             <li class="heading">
@@ -93,10 +93,10 @@
                     C.ផ្នែកកែឆ្នៃផ្សេងៗ
                 </h3>
             </li>
-            <li class="nav-item start <?= (@$left_menu_active == 4) ? 'active' : '' ?>">
+            <li class="nav-item start <?= (@$left_menu_active == 5) ? 'active' : '' ?>">
                 <a href=" ../inv_count_stone_cursed/" class="nav-link nav-toggle">
                 <i class="fa fa-list"></i>
-                <span class="title">4-ស្តុកកែឆ្នៃផ្សេងៗ </span>
+                <span class="title">5-ស្តុកកែឆ្នៃផ្សេងៗ </span>
                 </a>
             </li>
             <li class="nav-item start ">

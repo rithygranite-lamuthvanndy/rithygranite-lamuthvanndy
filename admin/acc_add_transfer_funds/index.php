@@ -63,8 +63,6 @@ else{
             <h2><i class="fa fa-fw fa-map-marker"></i> Add Cash Record</h2>
         </div>
     </div>
-    <br>
-    <br>
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
         <li role="presentation">

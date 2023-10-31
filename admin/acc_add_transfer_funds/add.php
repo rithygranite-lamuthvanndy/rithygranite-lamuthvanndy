@@ -185,6 +185,7 @@
                                          ?>
                                     </select>
                                 </div>
+                                
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <div class="form-group">
@@ -227,7 +228,7 @@
                                     <select name="cbo_description" id="input" class="form-control myselect2" required="required">
                                         <option value="">=== Select and choose ===</option>
                                         <?php 
-                                            $v_select=$connect->query("SELECT des_id,des_name FROM tbl_acc_decription ORDER BY des_name");
+                                            $v_select=$connect->query("SELECT * FROM tbl_acc_decription ORDER BY des_name");
                                             while ($row_select=mysqli_fetch_object($v_select)) {
                                                 echo '<option value="'.$row_select->des_id.'">'.$row_select->des_name.'</option>';
                                             }

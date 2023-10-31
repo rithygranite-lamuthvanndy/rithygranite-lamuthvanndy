@@ -5,7 +5,9 @@
 	<div class="row m0">
 		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 p0 pr28">
 			<div class="content">
-					<img src="img/img_home/company.png" class="img-responsive img-thumbnail" alt="Norway">
+					<img src="img/img_home/photo_1.jpg" class="img-responsive img-thumbnail" alt="Norway">
+					<img src="img/img_home/photo_2.jpg" class="img-responsive img-thumbnail" alt="Norway">
+					<img src="img/img_home/photo_3.jpg" class="img-responsive img-thumbnail" alt="Norway">
 			</div>
 			<br>
 			<div>

@@ -10,7 +10,7 @@
 <?php 
 	if(@$_GET['del_id'] != ""){
 		$del_id = @$_GET['del_id'];
-		$connect->query("DELETE FROM tbl_nationality WHERE nat_id='$del_id'");
+		$connect->query("DELETE FROM tbl_hr_position_list WHERE po_id='$del_id'");
 	}
 ?>
 <script type="text/javascript">

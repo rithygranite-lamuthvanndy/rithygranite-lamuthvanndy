@@ -14,6 +14,7 @@
         $v_date = @$_POST['txt_date'];
         $v_type = @$_POST['txt_type'];
         $v_disc = @$_POST['txt_disc'];
+        $v_company = @$_POST['txt_company'];
         $v_qty = @$_POST['txt_qty'];
         $v_unit = @$_POST['txt_unit'];
         $v_un_pr = @$_POST['txt_un_pc'];
@@ -23,6 +24,7 @@
                 frpc_no,
                 frpc_date,
                 frpc_type,
+                frpc_company,
                 frpc_description,
                 frpc_qty,
                 frpc_unit,
@@ -34,6 +36,7 @@
                 '$v_frpc_no',
                 '$v_date',
                 '$v_type',
+                '$v_company',
                 '$v_disc',
                 '$v_qty',
                 '$v_unit',
@@ -129,7 +132,7 @@
                                 <div class="form-group">
                                     <label>Description : </label>
                                     <input type="text" class="form-control" name="txt_disc"  autocomplete="off" id="txt_combodisc">
-                                        <select autocomplete="off"  name="txt_type1" id="input" class="form-control myselect2" required="required">
+                                        <select autocomplete="off"  name="txt_type1" id="input" class="form-control myselect2">
                                             <option autocomplete="off"  value="">*** Select Descrition***</option>
                                             <?php 
                                                 $v_result=$connect->query("SELECT * FROM tbl_fr_pc_expense ORDER BY frpc_id");
@@ -173,6 +176,19 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <label>Work Site ការដ្ឋាន * : </label>
+                                        <select name="txt_company" id="input" class="form-control myselect2" required="required">
+                                            <option value="">*** Select and choose ***</option>
+                                            <?php 
+                                                $v_result=$connect->query("SELECT * FROM tbl_fr_pc_company ORDER BY fpc_id");
+                                                while ($row_select=mysqli_fetch_object($v_result)) {
+                                                echo '<option data_code="'.$row_select->fpc_code.'" value="'.$row_select->fpc_id.'">'.$row_select->fpc_code.' || '.$row_select->fpc_namekh.' || '.$row_select->fpc_nameen.'</option>';
+
+                                                }
+                                             ?>
+                                        </select>
+                        </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="form-group">

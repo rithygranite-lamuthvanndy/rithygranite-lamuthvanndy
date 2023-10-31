@@ -10,7 +10,10 @@
 <?php 
 	if(@$_GET['del_id'] != ""){
 		$del_id = @$_GET['del_id'];
-		$connect->query("DELETE FROM tbl_sup_type WHERE supct_id='$del_id'");
+		
+
+		$connect->query("DELETE FROM tbl_prod_add_quote WHERE qt_id='$del_id'");
+		$connect->query("DELETE FROM tbl_prod_add_quote_list WHERE qtl_qt_id='$del_id'");
 	}
 ?>
 <script type="text/javascript">

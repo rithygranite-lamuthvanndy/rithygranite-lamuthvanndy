@@ -112,7 +112,9 @@ if ($_SESSION['user'] == '') {
     color: #0bd68b;
 }
 </style>
+
 <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo page-sidebar-fixed <?= (!@$_SESSION['is_hide_side_bar']? 'page-sidebar-closed':'' ) ?>">
+
     <?php
 
     if (isset($_GET['status'])) {

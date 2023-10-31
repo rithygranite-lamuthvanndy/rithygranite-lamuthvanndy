@@ -45,13 +45,14 @@
                   </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>
                     1
                   </td>
                   <td>
-                    សកម្មភាពអារថាស់​/Cưa Mâm: 
+                    សកម្មភាពអារថាស់ /Cưa Mâm: 
                   </td>
                   <td class="text-center">
                     <input type="checkbox" name="check_stay_in" style="width: 20px; height: 20px;">

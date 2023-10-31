@@ -10,10 +10,28 @@
             <li class="heading">
                 <h3 class="uppercase">Features</h3>
             </li>
-            <li class="nav-item  ">
-                <a href="../pro_project_menu/" class="nav-link nav-toggle">
+            <li class="nav-item">
+                <a href="../acc_account/" class="nav-link nav-toggle">
                     <i class="fa fa-undo"></i>
-                    <span class="title">Back</span>
+                    <span class="title">Back To Main</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../acc_none_sale_revenue/" class="nav-link nav-toggle">
+                    <i class="fa fa-undo"></i>
+                    <span class="title">Back To Sale revenue</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../acc_none_bill_supplier/" class="nav-link nav-toggle">
+                    <i class="fa fa-undo"></i>
+                    <span class="title">Back To Bill Supplier</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../acc_none_settle_advance_record/" class="nav-link nav-toggle">
+                    <i class="fa fa-undo"></i>
+                    <span class="title">Back To Settle Advance</span>
                 </a>
             </li>
         </ul>

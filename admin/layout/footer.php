@@ -14,7 +14,7 @@
      <div class="page-quick-sidebar">
          <ul class="nav nav-tabs">
              <li class="active">
-                 <a href="javascript:;" data-target="#quick_sidebar_tab_1" data-toggle="tab"> Users
+                 <a href="javascript:;" data-target="#quick_sidebar_tab_1" data-toggle="tab"> Users1
                      <!-- <span class="badge badge-danger">2</span> -->
                  </a>
              </li>

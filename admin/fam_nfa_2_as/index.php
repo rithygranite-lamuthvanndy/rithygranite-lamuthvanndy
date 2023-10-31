@@ -190,11 +190,11 @@
                                                                     echo '<td>'.(++$i).'</td>';
                                                                     echo '<td>'.$row->fam_date_acquired.'</td>';
                                                                     echo '<td>'.$row->fam_condition.'</td>';
-                                                                    echo '<td>'.$row->locat_name.'</td>';
-                                                                    echo '<td>'.$row->locat_note.'</td>';
+                                                                    echo '<td>'.$row->fam_location.'</td>';
+                                                                    echo '<td>'.$row->fam_note.'</td>';
                                                                     echo '<td class="text-center">';
-                                                                        echo '<a href="edit.php?edit_id='.$row->locat_id.'" class="btn btn-xs btn-warning" title="edit"><i class="fa fa-edit"></i></a> ';
-                                                                       echo '<a href="delete.php?del_id='.$row->locat_id.'" onclick="return confirm(\'Are you sure to delete this?\')" class="btn btn-xs btn-danger" title="delete"><i class="fa fa-trash"></i></a> ';
+                                                                        echo '<a href="edit.php?edit_id='.$row->fam_id.'" class="btn btn-xs btn-warning" title="edit"><i class="fa fa-edit"></i></a> ';
+                                                                       echo '<a href="delete.php?del_id='.$row->fam_id.'" onclick="return confirm(\'Are you sure to delete this?\')" class="btn btn-xs btn-danger" title="delete"><i class="fa fa-trash"></i></a> ';
 
                                                                     echo '</td>';
                                                                 echo '</tr>';

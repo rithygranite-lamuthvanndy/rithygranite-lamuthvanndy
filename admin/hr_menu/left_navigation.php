@@ -35,6 +35,12 @@
                     <span class="title">ស្នើសុំចុះបេសកកម្ម</span>
                 </a>
             </li>
+            <li class="nav-item start ">
+                <a href="../hr_employee_info/" class="nav-link nav-toggle">
+                    <i class="fa fa-list"></i>
+                    <span class="title">របាយការណ៍បុគ្គលិក</span>
+                </a>
+            </li>
             <li class="heading">
                 <h3 class="uppercase">Job Management</h3>
             </li>
@@ -67,13 +73,25 @@
                 <h3 class="uppercase">Employee Management</h3>
             </li>
             <li class="nav-item start ">
-                <a href="../hr_employee_list/index.php" class="nav-link nav-toggle">
+                <a href="../hr_employee_open_salary/index.php" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
-                    <span class="title">តារាងឈ្មោះបុគ្គលិក និងកម្មករ</span>
+                    <span class="title">តារាងបើកបៀវត្សរ៍ប្រចាំខែ</span>
                 </a>
             </li>
             <li class="nav-item start ">
-                <a href="../hr_employee_cv/index.php" class="nav-link nav-toggle">
+                <a href="../hr_employee_list/index.php" class="nav-link nav-toggle">
+                    <i class="fa fa-list"></i>
+                    <span class="title">តារាងឈ្មោះបុគ្គលិក</span>
+                </a>
+            </li>
+            <li class="nav-item start ">
+                <a href="../hr_employee_worker/index.php" class="nav-link nav-toggle">
+                    <i class="fa fa-list"></i>
+                    <span class="title">តារាងឈ្មោះកម្មករ</span>
+                </a>
+            </li>
+            <li class="nav-item start ">
+                <a href="../hr_employee_salary/index.php" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
                     <span class="title">តារាងបៀវត្សរ៍បុគ្គលិក និងកម្មករ</span>
                 </a>
@@ -81,13 +99,19 @@
             <li class="nav-item start ">
                 <a href="../hr_employee_contract/index.php" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
-                    <span class="title">តារាងក្រុមម៉ៅការផ្សេងៗ</span>
+                    <span class="title">តារាងសារជ័រ</span>
                 </a>
             </li>
             <li class="nav-item start ">
                 <a href="../hr_employee_training/index.php" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
                     <span class="title">តារាងបុគ្គលិក និងកម្មករធ្វើការថែមម៉ោង</span>
+                </a>
+            </li>
+            <li class="nav-item start ">
+                <a href="../hr_employee_note/index.php" class="nav-link nav-toggle">
+                    <i class="fa fa-list"></i>
+                    <span class="title">សម្គាល់សម្រាបបុគ្គលិក និងកម្មករ</span>
                 </a>
             </li>
             <li class="nav-item start ">
@@ -171,7 +195,7 @@
             <li class="nav-item start ">
                 <a href="../hr_minus_list/index.php" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
-                    <span class="title">Minus List</span>
+                    <span class="title">ប្រភេជ័រ</span>
                 </a>
             </li>
 
@@ -200,6 +224,12 @@
                 <a href="../hr_department_list/index.php" class="nav-link nav-toggle">
                     <i class="fa fa-list"></i>
                     <span class="title">Department List</span>
+                </a>
+            </li>
+            <li class="nav-item start ">
+                <a href="../hr_department_main/index.php" class="nav-link nav-toggle">
+                    <i class="fa fa-list"></i>
+                    <span class="title">Department Main</span>
                 </a>
             </li>
             <li class="nav-item start ">
@@ -238,7 +268,7 @@
                     <span class="title">National List</span>
                 </a>
             </li>
-
+            
 
         </ul>
         <!-- END SIDEBAR MENU -->

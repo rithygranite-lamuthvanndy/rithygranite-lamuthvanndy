@@ -107,9 +107,9 @@
                     <div class="col-md-9">
                       <div class="nav-tabs-custom">
                         <ul class="nav nav-tabs">
-                          <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
-                          <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
-                          <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                          <li class="active"><a href="#activity" data-toggle="tab">សកម្មភាពការងារ</a></li>
+                          <li><a href="#timeline" data-toggle="tab">ស្មើសុំច្បាប់</a></li>
+                          <li><a href="#settings" data-toggle="tab">ស្មើសុំផ្សេងៗ</a></li>
                         </ul>
                         <div class="tab-content">
                           <div class="active tab-pane" id="activity">

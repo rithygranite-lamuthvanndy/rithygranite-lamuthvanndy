@@ -17,7 +17,7 @@ if(@$_GET['status']=='update')
 <div class="portlet light bordered">
     <div class="row">
         <div class="col-xs-12">
-            <h2><i class="fa fa-fw fa-map-marker"></i> Product Name</h2>
+            <h2><i class="fa fa-fw fa-map-marker"></i> សម្ភារៈផ្គត់ផ្គង់ការផលិត</h2>
         </div>
     </div>
     <br>
@@ -63,12 +63,18 @@ if(@$_GET['status']=='update')
                             echo '<tr>';
                                 echo '<td>'.(++$i).'</td>';
                                 echo '<td>';
-                                    echo '<img width="50px;" src="../../img/img_stock/product_name/'.$row->stpron_photo.'" alt="Blank">';
+                                    if($row->stpron_photo!= ""){
+                                        echo '<img width="50px;" src="../../img/img_stock/product_name/'.$row->stpron_photo.'" alt="Blank">';   
+                                    }else{
+                                        echo '<img width="50px;" src="../../img/img_stock/product_name/product.jpg">';
+                                    }
+                                    
                                     echo '&nbsp;&nbsp;';
                                     echo '<a class="btn btn-primary btn-xs" data-toggle="modal" href="#modal" onclick="view_iframe_upload_image('.$row->stpron_id.')"><i class="fa fa-upload"></i></a>';
                                 echo '</td>';
-                                echo '<td>'.$row->stpron_barcode.'</td>';
-                                echo '<td>'.$row->stpron_code.'</td>';
+            
+                                echo '<td><a href="#more_info" class="btn btn-info btn-xs" onclick="load_iframe(this)" data_id="'.$row->stpron_id.'" data_status="'.$row->stpron_id.'" role="button" data-toggle="modal">'.$row->stpron_barcode.'</a></td>';   
+                                echo '<td><a href="#more_info" class="btn btn-info btn-xs" onclick="load_iframe(this)" data_id="'.$row->stpron_id.'" data_status="'.$row->stpron_id.'" role="button" data-toggle="modal">'.$row->stpron_code.'</a></td>';   
                                 echo '<td>'.$row->stpron_name_kh.'</td>';
                                 echo '<td>'.$row->stpron_name_vn.'</td>';
                                 echo '<td>'.$row->pro_type_name.'</td>';
@@ -117,9 +123,19 @@ if(@$_GET['status']=='update')
             location.reload();
         });
     });
+    function load_iframe(obj){
+       let v_id=$(obj).attr('data_id');
+       // let v_status=$(obj).attr('data_status');
+        $('#my_frame').attr("src","iframe_more_info.php?v_id="+v_id);
+    }
 </script>
 <div class="modal fade" id="modal">
     <div class="modal-dialog">
         <iframe id="result_modal" frameborder="0" style="height: 500px; width: 100%;" align="top" scrolling="0"></iframe>
+    </div>
+</div>
+<div class="modal fade" id="more_info">
+    <div class="modal-dialog modal-lg" style="width: 80%; border: 1px solid darkred;">
+        <iframe id="my_frame" frameborder="0" style="height: 800px; max-width: 100%; width: 100%;" align="top" scrolling="0"></iframe>
     </div>
 </div>

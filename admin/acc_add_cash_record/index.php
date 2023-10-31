@@ -117,7 +117,7 @@ if(isset($_POST['txt_new_row'])){
         </li>
     </ul>
     
-    <br><br>
+    <br>
     <div class="">
         <div class="caption font-dark">
             <a href="add.php" target="_blank" id="sample_editable_1_new" class="btn green"> Add New
@@ -331,6 +331,7 @@ if(isset($_POST['txt_new_row'])){
 
 
 
+
 <script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
     $('tbody').on('click', 'a.myEdit', function(event) {
@@ -427,6 +428,6 @@ if(isset($_POST['txt_new_row'])){
 <?php include_once '../layout/footer.php' ?>
 <div class="modal fade" id="more_info">
     <div class="modal-dialog modal-lg" style="width: 1300px; border: 1px solid darkred;">
-        <iframe id="my_frame" frameborder="0" style="height: 600px; max-width: 100%; width: 100%;" align="top" scrolling="0"></iframe>
+        <iframe id="my_frame" frameborder="0" style="height: 600px; max-width: 100%; width: 100%;" align="left" scrolling="0"></iframe>
     </div>
 </div>

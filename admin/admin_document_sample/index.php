@@ -34,7 +34,8 @@
                         <th>Description</th>
                         <th>Department</th>
                         <th>Employee Check</th>
-                        <th>Attach File</th>
+                        <th class="text-center">Attach File PDF</th>
+                        <th class="text-center">Attach File Word/Excel</th>
                         <th style="min-width: 100px;" class="text-center">Action <i class="fa fa-cog fa-spin"></i></th>
                     </tr>
                 </thead>
@@ -59,15 +60,25 @@
                                         echo '<a href="upload.php?up_id='.$row->docs_id.'&old_file='.$row->docs_attach_file.'" " title="Upload file"><i class="fa fa-upload" style="color: blue;"></i></a> &nbsp;&nbsp;';
 
                                         if($row->docs_attach_file!= ""){
-                                            echo '| &nbsp;&nbsp;<a href="../../file/file_document_sample/'.$row->docs_attach_file.'" target="_blank" title="Download"><i class="fa fa-download" style="color: red;"></i></a>';
+                                            echo '| &nbsp;&nbsp;<a href="../../file/file_document_sample/'.$row->docs_attach_file.'" target="_blank" title="Download"><i class="fa fa-download" style="color: red;"></i></a> មានឯកសារ';
+                                            
+                                        }else{
+                                            echo '| &nbsp;&nbsp;<a class="text-default"><i class="fa fa-download fa-fw" style="color: red;" title="No file to download"></i></a> អត់មានឯកសារ';
+                                        }
+                                    echo '</td>';
+                                echo '<td class="text-center">';
+                                        echo '<a href="upload_we.php?up_id='.$row->docs_id.'&old_file='.$row->docs_attach_we.'" " title="Upload file"><i class="fa fa-upload" style="color: blue;"></i></a> &nbsp;&nbsp;';
+
+                                        if($row->docs_attach_we!= ""){
+                                            echo '| &nbsp;&nbsp;<a href="../../file/file_document_sample/'.$row->docs_attach_we.'" target="_blank" title="Download"><i class="fa fa-download" style="color: red;"></i></a> មានឯកសារ';
                                         
                                         }else{
-                                            echo '| &nbsp;&nbsp;<a class="text-default"><i class="fa fa-download fa-fw" style="color: red;" title="No file to download"></i></a>';
+                                            echo '| &nbsp;&nbsp;<a class="text-default"><i class="fa fa-download fa-fw" style="color: red;" title="No file to download"></i></a> អត់មានឯកសារ';
                                         }
                                     echo '</td>';
                                 echo '<td class="text-center">';
                                     echo '<a href="edit.php?edit_id='.$row->docs_id.'" class="btn btn-xs btn-warning" title="edit"><i class="fa fa-edit"></i></a> ';
-                                   //echo '<a href="delete.php?del_id='.$row->docs_id.'" onclick="return confirm(\'Are you sure to delete this?\')" class="btn btn-xs btn-danger" title="delete"><i class="fa fa-trash"></i></a> ';
+                                   echo '<a href="delete.php?del_id='.$row->docs_id.'" onclick="return confirm(\'Are you sure to delete this?\')" class="btn btn-xs btn-danger" title="delete"><i class="fa fa-trash"></i></a> ';
 
                                 echo '</td>';
                             echo '</tr>';

@@ -55,7 +55,7 @@
             <div class="col-xs-12">
                 <div class="col-xs-6 text-center">
                     <h3><b>CUS_ID: <?= $row->cus_code ?></b></h3>  
-                    <img width="300px;" src="../../img/img_empl/<?= $row->cussi_photos ?>" class="img-responsive img-responsive img-thumbnail" alt="Blank">
+                    <img width="300px;" src="../../img/img_empl/<?php if($row->cussi_photos<>""){ echo $row->cussi_photos; }else{ echo 'blank.png';} ?>" class="img-responsive img-responsive img-thumbnail" alt="Blank">
                     
                 </div>
                 <div class="col-xs-6">
@@ -79,7 +79,7 @@
             </div>
 
             <!-- /.col -->
-                    <div class="col-xs-12">
+            <div class="col-xs-12">
                       <hr>
                       <br>
                       <div class="nav-tabs-custom">
@@ -87,7 +87,7 @@
                           <li class="active"><a href="#activity" data-toggle="tab">Prochase Order</a></li>
                           <li><a href="#timeline" data-toggle="tab">Invoice</a></li>
                           <li><a href="#settings" data-toggle="tab">Delivery Note</a></li>
-                          <li><a href="#settings" data-toggle="tab">Quotatuons</a></li>
+                          <li><a href="#settings1" data-toggle="tab">Quotatuons</a></li>
                         </ul>
                         <div class="tab-content">
                           <div class="active tab-pane" id="activity">
@@ -99,58 +99,80 @@
                       <br>
                               <div class="portlet-body">
                                   <div id="sample_1_wrapper" class="dataTables_wrapper">
-                                      <table class="table table-striped table-bordered table-hover dataTable dtr-inline" id="sample_2" role="grid" aria-describedby="sample_1_info">
-                                          <thead>
-                                              <tr role="row">
-                                                  <th class="text-center">N&deg;</th>
-                                                  <th class="text-center">Date</th>
-                                                  <th class="text-center">Num PO</th>
-                                                  <th class="text-center">Feature</th>
-                                                  <th class="text-center">Length (cm)</th>
-                                                  <th class="text-center">Width (cm)</th>
-                                                  <th class="text-center">Thickness (cm)</th>
-                                                  <th class="text-center">Pc/Slab</th>
-                                                  <th class="text-center">M2</th>
-                                                  <th class="text-center">Note</th>
-                                                  <th style="min-width: 100px;" class="text-center">Action <i class="fa fa-cog fa-spin"></i></th>
-                                              </tr>
-                                          </thead>
-                                          <tbody>
-                                            <?php
-                                                      echo '<tr>';
-                                                          echo '<td></td>';
-                                                          echo '<td></td>';
-                                                          echo '<td></td>';
-                                                          echo '<td></td>';
-                                                          echo '<td></td>';
-                                                          echo '<td></td>';
-                                                          echo '<td></td>';
-                                                          echo '<td></td>';
-                                                          echo '<td></td>';
-                                                          echo '<td></td>';
-                                                          echo '<td class="text-center">';
-                                                              
-                                                          echo '</td>';
-                                                      echo '</tr>';
-                                                  
-                                              ?>
-                                          </tbody>
-                                          <tfoot>
-                                              <tr>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                              </tr>
-                                          </tfoot>
-                                      </table>
+
+<table class="table table-striped table-bordered table-hover dataTable dtr-inline collapsed" id="sample_1" role="grid" aria-describedby="sample_1_info">
+                <thead style="background-color: #CCFFFF;">
+                    <tr role="row" class="text-center">
+                        <th rowspan="2" style="vertical-align: middle; text-align: center;">N&deg;</th>
+                        <th rowspan="2" style="vertical-align: middle; text-align: center;">Date Record </th>
+                        <th rowspan="2" style="vertical-align: middle; text-align: center;">PO No </th>
+                        <th colspan="2" style="vertical-align: middle; text-align: center;">Description of Goods<br> 
+                            (Sự miêu tả)</th>
+                        <th colspan="3" style="vertical-align: middle; text-align: center;">Dimension/Quy Cách (CM)</th>
+                        <th colspan="2" style="vertical-align: middle; text-align: center;">Quantity (Số lượng)</th>
+                        <th rowspan="2" style="vertical-align: middle; text-align: center;">Noted (Lưu ý)</th>
+                    </tr>
+                    <tr role="row" class="text-center">
+                        <th style="vertical-align: middle; text-align: center;">Name (Tên)</th>
+                        <th style="vertical-align: middle; text-align: center;">Feature (Đặc tính)</th>
+                        <th style="vertical-align: middle; text-align: center;">Length<br>(Chiều dài)</th>
+                        <th style="vertical-align: middle; text-align: center;">Width<br>(Chiều rộng)</th>
+                        <th style="vertical-align: middle; text-align: center;">Thickness<br>(Chiều cao)<br>(+-0.2)</th>
+                        <th style="vertical-align: middle; text-align: center;">Pc/Slab</th>
+                        <th style="vertical-align: middle; text-align: center;">M2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        $i = 0;
+                        $total_slab=0;
+                        $total_m2=0;
+                        $get_data = $connect->query("SELECT 
+                               *, (select count(pol_id) from tbl_prod_add_po_list where pol_po_id=po_id) as countid
+                            FROM   tbl_prod_add_po_list AS A  
+                            LEFT JOIN tbl_prod_add_po AS B ON B.po_id = A.pol_po_id
+                            LEFT JOIN tbl_inv_type_make AS D ON D.tm_id = A.pol_feature
+                            WHERE B.po_customer= '$row->cussi_id'
+                            ORDER BY po_date DESC");
+                        while ($row1 = mysqli_fetch_object($get_data)) {
+                            echo '<tr>';
+                                echo '<td>'.(++$i).'</td>';
+                                echo '<td>'.$row1->po_date.'</td>';
+                                echo '<td>'.$row1->po_no.'</td>';
+                                echo '<td>'.$row1->pol_name.'</td>';
+                                echo '<td>'.$row1->tm_code.'</td>';
+                                echo '<td>'.$row1->pol_length.'</td>';
+                                echo '<td>'.$row1->pol_width.'</td>';
+                                echo '<td>'.$row1->pol_thickness.'</td>';
+                                echo '<td>'.$row1->pol_pcs_slab.'</td>';
+                                echo '<th class="text-center">'.number_format($row1->pol_m2,2).'</th>';
+                                echo '<td>'.$row1->pol_note.'</td>';
+                            echo '</tr>';
+                            $total_slab+=$row1->pol_pcs_slab;
+                            $total_m2+=$row1->pol_m2;
+                        }
+                    ?>
+                </tbody>
+                        <tfoot>
+                            <tr>
+                               
+                                <th style="visibility: hidden;"></th>
+                                <th style="visibility: hidden;"></th>
+                                <th style="visibility: hidden;"></th>
+                                <th style="visibility: hidden;"></th>
+                                <th style="visibility: hidden;"></th>
+                                <th style="visibility: hidden;"></th>
+                                <th colspan="2" class="text-right">សរុប <br>TOTAL M <sup>2</sup></th>
+                                <th style="vertical-align: middle; text-align: center; font-size: 14px;"><?= $total_slab ?></th>
+                                <th style="vertical-align: middle; text-align: center; font-size: 14px;"><?= number_format($total_m2,2) ?></th>
+                                <th style="visibility: hidden;"></th>
+                                
+                            </tr>
+                        </tfoot>
+
+            </table>
+
+
                                   </div>
                               </div>
 
@@ -258,58 +280,63 @@
                             </ul>
                           </div>
                           <!-- /.tab-pane -->
-
-                          <div class="tab-pane" id="settings">
+                            <div class="tab-pane" id="settings">
+                            </div>
+                          <div class="tab-pane" id="settings1">
                             <form class="form-horizontal">
-                              <div class="form-group">
-                                <label for="inputName" class="col-sm-2 control-label">Name</label>
-
-                                <div class="col-sm-10">
-                                  <input type="email" class="form-control" id="inputName" placeholder="Name">
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label for="inputEmail" class="col-sm-2 control-label">Email</label>
-
-                                <div class="col-sm-10">
-                                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label for="inputName" class="col-sm-2 control-label">Name</label>
-
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="inputName" placeholder="Name">
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label for="inputExperience" class="col-sm-2 control-label">Experience</label>
-
-                                <div class="col-sm-10">
-                                  <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label for="inputSkills" class="col-sm-2 control-label">Skills</label>
-
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-                                    </label>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                  <button type="submit" class="btn btn-danger">Submit</button>
-                                </div>
-                              </div>
+                              <table class="table table-striped table-bordered table-hover dataTable dtr-inline collapsed" id="sample_1" role="grid" aria-describedby="sample_1_info">
+                                    <thead style="background-color: #CCFFFF;">
+                                        <tr role="row" class="text-center">
+                                            <th rowspan="2" style="vertical-align: middle; text-align: center;">N&deg;</th>
+                                            <th rowspan="2" style="vertical-align: middle; text-align: center;">Date Record </th>
+                                            <th rowspan="2" style="vertical-align: middle; text-align: center;">Code Quote </th>
+                                            <th colspan="2" style="vertical-align: middle; text-align: center;">Description of Goods<br> 
+                                                (Sự miêu tả)</th>
+                                            <th colspan="3" style="vertical-align: middle; text-align: center;">Dimension/Quy Cách (CM)</th>
+                                            <th colspan="2" style="vertical-align: middle; text-align: center;">Quantity (Số lượng)</th>
+                                            <th rowspan="2" style="vertical-align: middle; text-align: center;">Noted (Lưu ý)</th>
+                                            
+                                        </tr>
+                                        <tr role="row" class="text-center">
+                                            <th style="vertical-align: middle; text-align: center;">Name (Tên)</th>
+                                            <th style="vertical-align: middle; text-align: center;">Feature (Đặc tính)</th>
+                                            <th style="vertical-align: middle; text-align: center;">Length<br>(Chiều dài)</th>
+                                            <th style="vertical-align: middle; text-align: center;">Width<br>(Chiều rộng)</th>
+                                            <th style="vertical-align: middle; text-align: center;">Thickness<br>(Chiều cao)<br>(+-0.2)</th>
+                                            <th style="vertical-align: middle; text-align: center;">Pc M2</th>
+                                            <th style="vertical-align: middle; text-align: center;">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                            $i = 0;
+                                            $get_data = $connect->query("SELECT 
+                                                   *
+                                                FROM   tbl_prod_add_quote_list AS A  
+                                                LEFT JOIN tbl_prod_add_quote AS B ON B.qt_id = A.qtl_qt_id
+                                                LEFT JOIN tbl_cus_customer_info AS C ON C.cussi_id=B.qt_customer
+                                                LEFT JOIN tbl_inv_type_make AS D ON D.tm_id = A.qtl_feature
+                                                WHERE B.qt_customer = '$row->cussi_id'
+                                                ORDER BY qtl_id DESC");
+                                            while ($row = mysqli_fetch_object($get_data)) {
+                                                echo '<tr>';
+                                                    echo '<td>'.(++$i).'</td>';
+                                                    echo '<td>'.$row->qt_date.'</td>';
+                                                    echo '<td>'.$row->qt_no.'</td>';
+                                                    echo '<td>'.$row->qtl_name.'</td>';
+                                                    echo '<td>'.$row->tm_code.'</td>';
+                                                    echo '<td>'.$row->qtl_length.'</td>';
+                                                    echo '<td>'.$row->qtl_width.'</td>';
+                                                    echo '<td>'.$row->qtl_thickness.'</td>';
+                                                    echo '<td>'.$row->qtl_pcs_m2.'</td>';
+                                                    echo '<th class="text-center">'.number_format($row->qtl_price,2).'</th>';
+                                                    echo '<td>'.$row->qtl_note.'</td>';
+                                                    
+                                                echo '</tr>';
+                                            }
+                                        ?>
+                                    </tbody>
+                                </table>
                             </form>
                           </div>
                           <!-- /.tab-pane -->

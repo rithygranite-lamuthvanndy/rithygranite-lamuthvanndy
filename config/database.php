@@ -1,6 +1,6 @@
 <?php
 $host_name = 'localhost';
-$database = '14systemsdemo2';
+$database = '14systemsrtb';
 // $database = 'rithygranite_v1';
 $user_name = 'phpmyadmin';
 $password = 'Khmerboy@016';

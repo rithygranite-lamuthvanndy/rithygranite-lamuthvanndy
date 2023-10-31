@@ -28,6 +28,9 @@
             <!-- <a name="btn_delete" onclick="submitForm()" id="sample_editable_1_new" class="btn-md btn btn-primary"> Delete 
                 <i class="fa fa-list"></i>
             </a> -->
+            <a href="add_r.php" id="sample_editable_1_new" class="btn red"> Add New
+                <i class="fa fa-plus"></i>
+            </a>
         </div>
     </div>
     <br>
@@ -72,6 +75,7 @@
                                 echo '<td>'.number_format($v_bal,2).'</td>';
                                 echo '<td class="text-center">';
                                     echo '<a href="edit.php?edit_id='.$row->accca_id.'" class="btn btn-xs btn-warning" title="edit"><i class="fa fa-edit"></i></a> ';
+                                    echo '<a href="index_rp.php?edit_id='.$row->accca_id.'" class="btn btn-xs btn-warning" title="edit"><i class="fa fa-file-text"></i></a> ';
                                    // echo '<a href="delete.php?del_id='.$row->accca_id.'" onclick="return confirm(\'Are you sure to delete this?\')" class="btn btn-xs btn-danger" title="delete"><i class="fa fa-trash"></i></a> ';
 
                                 echo '</td>';

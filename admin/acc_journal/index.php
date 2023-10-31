@@ -201,7 +201,7 @@ if (isset($_POST['btn_search'])) {
                         echo '<tr>';
                         if ($v_count_row == $v_span_row--) {
                             echo '<td style="vertical-align: top!important;" rowspan="' . $v_count_row . '">' . $i . '</td>';
-                            echo '<td style="vertical-align: top!important;" style="margin: 0px!important;" class="text-center" rowspan="' . $v_count_row . '">' . date('Y-m-d', strtotime($main_date)) . '</td>';
+                            echo '<td style="vertical-align: top!important;" style="margin: 0px!important; border=1;" class="text-center" rowspan="' . $v_count_row . '">' . date('Y-m-d', strtotime($main_date)) . '</td>';
                             echo '<td style="vertical-align: top!important;" class="text-center" rowspan="' . $v_count_row . '">' . $row_detail->entry_no . '</td>';
                             echo '<td style="vertical-align: top!important;" class="text-center" rowspan="' . $v_count_row . '">' . $row_detail->name . '</td>';
                         }

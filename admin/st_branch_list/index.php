@@ -12,7 +12,7 @@
 <div class="portlet light bordered">
     <div class="row">
         <div class="col-xs-12">
-            <h2><i class="fa fa-fw fa-map-marker"></i> Branch Received List</h2>
+            <h2 style="'Khmer OS';"><i class="fa fa-fw fa-map-marker"></i> តំបន់អាជីវកម្ម</h2>
         </div>
     </div>
     <br>

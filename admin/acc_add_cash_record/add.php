@@ -159,6 +159,7 @@
             </a>
         </div>
     </div>
+
     <div class="portlet-body">
         <div class="panel panel-primary">
             <div class="panel-heading">
@@ -593,7 +594,7 @@
 </div>
 <div class="modal fade" id="rec_from">
     <div class="modal-dialog" style="width: 70%;">
-        <iframe src="iframe_add_rec_from.php" frameborder="0" style="height: 650px; max-width: 100%; width: 100%;" align="top" scrolling="0"></iframe>
+        <iframe src="iframe_add_rec_from.php" frameborder="0" style="height: 680px; max-width: 100%; width: 100%;" align="top" scrolling="0" ></iframe>
     </div>
 </div>
 <div class="modal fade" id="rec_pay_to">

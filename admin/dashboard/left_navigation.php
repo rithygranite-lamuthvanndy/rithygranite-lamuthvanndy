@@ -21,7 +21,7 @@
                             WHERE ctca_date_alert = '$v_current_date'
                             GROUP BY ctca_id");
                     ?>
-                    <span class="title"> Alert Contact <span class="text-danger">[ <?= mysqli_num_rows($get_data) ?> ]</span></span>
+                    <span class="title"> Accounting Depament <span class="text-danger">[ <?= mysqli_num_rows($get_data) ?> ]</span></span>
                     <?php
                     unset($v_current_date);
                     unset($get_data)
@@ -42,7 +42,7 @@
                             ");
                     ?>
 
-                    <span class="title"> Alert Cash Flow <span class="text-danger">[ <?= mysqli_num_rows($get_data_cash) ?> ]</span></span>
+                    <span class="title"> Sale Depament <span class="text-danger">[ <?= mysqli_num_rows($get_data_cash) ?> ]</span></span>
                     <?php
                     unset($v_current_date_cash);
                     unset($get_data_cash)
@@ -64,7 +64,7 @@
                             ");
                     ?>
 
-                    <span class="title"> Alert Working Flow <span class="text-danger">[ <?= mysqli_num_rows($get_data_work) ?> ]</span></span>
+                    <span class="title"> Operation Depament <span class="text-danger">[ <?= mysqli_num_rows($get_data_work) ?> ]</span></span>
                     <?php
                     unset($v_current_date_work);
                     unset($get_data_work)

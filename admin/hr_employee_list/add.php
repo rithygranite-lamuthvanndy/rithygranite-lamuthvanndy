@@ -23,6 +23,7 @@
         $v_departmant = mysqli_escape_string($connect,@$_POST['cbo_departmant']);
         $v_datebith = mysqli_escape_string($connect,@$_POST['txt_daitebirth']);
         $v_datework = mysqli_escape_string($connect,@$_POST['txt_datework']);
+        $v_salary = mysqli_escape_string($connect,@$_POST['txt_salary']);
         $v_phone = mysqli_escape_string($connect,@$_POST['txt_phone']);
         $v_phone2 = mysqli_escape_string($connect,@$_POST['txt_phone2']);
         //$v_photo = (!@$_SESSION['saved_image_name']) ?: 'blank.png';
@@ -46,6 +47,7 @@
                 empl_department,
                 empl_date_birth,
                 empl_date_work,
+                empl_salary,
                 empl_phone,
                 empl_phone2,
                 empl_email,
@@ -63,6 +65,7 @@
                 '$v_departmant',
                 '$v_datebith',
                 '$v_datework',
+                '$v_salary',
                 '$v_phone',
                 '$v_phone2',
                 '$v_email',
@@ -92,6 +95,7 @@
                 empl_department,
                 empl_date_birth,
                 empl_date_work,
+                empl_salary,
                 empl_phone,
                 empl_phone2,
                 empl_email,
@@ -109,6 +113,7 @@
                 '$v_departmant',
                 '$v_datebith',
                 '$v_datework',
+                '$v_salary',
                 '$v_phone',
                 '$v_phone2',
                 '$v_email',
@@ -199,25 +204,25 @@
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <div class="form-group">
                                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                        <label for="inputCbo_position">Position * : </label>
+                                        <label for="inputCbo_position">មុខងារជា * : </label>
                                         <select name="cbo_position" id="inputCbo_position" class="form-control myselect2" required="required">
                                             <option value="">*** Select and choose ***</option>
                                             <?php 
-                                                $v_result=$connect->query("SELECT * FROM tbl_hr_position_list ORDER BY po_name");
+                                                $v_result=$connect->query("SELECT * FROM tbl_hr_position_list where po_id <> 142 ORDER BY po_name");
                                                 while ($row_select=mysqli_fetch_object($v_result)) {
-                                                    echo '<option value="'.$row_select->po_id.'">'.$row_select->po_name.'||'.$row_select->po_note.'</option>';
+                                                    echo '<option value="'.$row_select->po_id.'">'.$row_select->po_id.' || '.$row_select->po_name.'</option>';
                                                 }
                                              ?>
                                         </select>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                        <label>Department * : </label>
+                                        <label>នៅផ្នែក * : </label>
                                         <select name="cbo_departmant" id="inputCbo_position" class="form-control myselect2" required="required">
                                             <option value="">*** Select and choose ***</option>
                                             <?php 
-                                                $v_result=$connect->query("SELECT * FROM tbl_hr_department_sub ORDER BY dep_name");
+                                                $v_result=$connect->query("SELECT * FROM tbl_hr_department_sub WHERE dep_id IN (65, 66, 67, 68, 69, 70, 71) ORDER BY dep_name");
                                                 while ($row_select=mysqli_fetch_object($v_result)) {
-                                                    echo '<option value="'.$row_select->dep_id.'">'.$row_select->dep_name.'</option>';
+                                                    echo '<option value="'.$row_select->dep_id.'">'.$row_select->dep_id.' || '.$row_select->dep_name.'</option>';
                                                 }
                                              ?>
                                         </select>
@@ -225,23 +230,27 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                        <label>Date of Birth : </label>
+                                        <label>ថ្ងែ ខែ ឆ្នាំ កំណើត : </label>
                                         <input type="text" data-provide="datepicker" data-date-format="yyyy-mm-dd" class="form-control" required name="txt_daitebirth" value="<?= date('Y-m-d') ?>">
                                         
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                        <label>Date of Working : </label>
+                                        <label>ថ្ងៃ ខែ ឆ្នាំ ចូលធ្វើការ : </label>
                                         <input type="text" data-provide="datepicker" data-date-format="yyyy-mm-dd" class="form-control" required name="txt_datework" value="<?= date('Y-m-d') ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                         <label>Phone 1 * : </label>
                                         <input type="text" class="form-control" name="txt_phone" required=""  autocomplete="off">
                                     </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                         <label>Phone 2 : </label>
-                                        <input type="text" class="form-control" name="txt_phone2" required=""  autocomplete="off">
+                                        <input type="text" class="form-control" name="txt_phone2" autocomplete="off">
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <label>Salary : </label>
+                                        <input type="number" class="form-control" name="txt_salary" autocomplete="off">
                                     </div>
                                 </div>
                                 
@@ -249,7 +258,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group col-xs-12">
-                                            <label for = "">User Photo</label>
+                                            <label for = "">មាន រូប</label>
                                             <input type="file" id = "phot" name="image" onchange="loadFile(event)" />
                                         </div>
                                         <div class="form-group col-xs-12">                                   
@@ -258,11 +267,11 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                     <div class="col-md-12">
-                                        <label>Email * : </label>
-                                        <input type="text" class="form-control" name="txt_email" required=""  autocomplete="off">
+                                        <label>អាសយដ្ឋានបច្ចុប្បន្ន </label>
+                                        <input type="text" class="form-control" name="txt_email"  autocomplete="off">
                                     </div>
                                     <div class="col-md-12">
-                                        <label>Note : </label>
+                                        <label>សំគាល់ផ្សេងៗ </label>
                                         <textarea type="text" class="form-control" name="txt_note" style="height: 80px;" autocomplete="off"></textarea>
                                     </div>
                                 </div>

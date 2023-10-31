@@ -26,12 +26,125 @@ function myFunction() {
         </div>
     </div>
     <hr>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="../dashboard/">Get things done</a>
+        </li>
+        <li role="presentation">
+            <a href="../dashboard-bo/">Business Overview</a>
+        </li>
+    </ul> 
     
+    <div class="col-lg-12">
+      <div class="portlet-body col-lg-4">
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Profit and Loss</h3>
+              </div>
+              <div class="panel-body">
+                  <h1 style="font-family: 'Times New Roman';"><b> $ 0</b></h1>
+                  <h4 style="font-family: 'Times New Roman'; color: #A7B3AC;"><b>NET INCONE FOR <?= date('M') ?></b></h4>
+                  <br><br>
 
+                  <h4 style="font-family: 'Times New Roman';"><b> $ 0</b></h4>
+                  <h4 style="font-family: 'Times New Roman'; color: #A7B3AC;"><b>INCONE</b></h4>
+
+                  <h4 style="font-family: 'Times New Roman';"><b> $ 0</b></h4>
+                  <h4 style="font-family: 'Times New Roman'; color: #A7B3AC;"><b>EXPENSES</b></h4>
+              </div>
+          </div>
+      </div>
+      <div class="portlet-body col-lg-4">
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Expenses</h3>
+              </div>
+              <div class="panel-body">
+                  <h1 style="font-family: 'Times New Roman';"><b> $ 0.00</b></h1>
+                  <h4 style="font-family: 'Times New Roman'; color: #A7B3AC;"><b>LAST MONTH</b></h4>
+                  <br><br>
+              </div>
+          </div>
+      </div>
+      <div class="portlet-body col-lg-4">
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Bank Accounts</h3>
+              </div>
+              <div class="panel-body">
+                  <table width="100%">
+                    <tr>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td style="font-family: 'Times New Roman'; color: #00B050; font-size: 20px;">Checking - 1234</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="border-bottom: 1px solid #ddd;">In Quickbooks</td>
+                      <td style="text-align: right; border-bottom: 1px solid #ddd;">$ 8,100.00</td>
+                    </tr>
+                    <tr>
+                      <td style="font-family: 'Times New Roman'; color: #00B050; font-size: 20px;">Visa - 1234</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="border-bottom: 1px solid #ddd;">In Quickbooks</td>
+                      <td style="text-align: right; border-bottom: 1px solid #ddd;">$ 0.00</td>
+                    </tr>
+                  </table>
+              </div>
+          </div>
+      </div>      
+    </div>
+
+    <div class="col-lg-12">
+      <div class="portlet-body col-lg-4">
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Invoices</h3>
+              </div>
+              <div class="panel-body">
+                  <h1 style="font-family: 'Times New Roman';"><b> $ 0.00</b></h1>
+                  <h4 style="font-family: 'Times New Roman'; color: #A7B3AC;"><b>LAST MONTH</b></h4>
+                  <br><br>
+              </div>
+          </div>
+      </div>
+      <div class="portlet-body col-lg-4">
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Sales</h3>
+              </div>
+              <div class="panel-body">
+                  <h1 style="font-family: 'Times New Roman';"><b> $ 0.00</b></h1>
+                  <h4 style="font-family: 'Times New Roman'; color: #A7B3AC;"><b>LAST MONTH</b></h4>
+                  <br><br>
+              </div>
+          </div>
+      </div>
+      <div class="portlet-body col-lg-4">
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Dicover</h3>
+              </div>
+              <div class="panel-body">
+                  <h1 style="font-family: 'Times New Roman';"><b> $ 0.00</b></h1>
+                  <h4 style="font-family: 'Times New Roman'; color: #A7B3AC;"><b>LAST MONTH</b></h4>
+                  <br><br>
+              </div>
+          </div>
+      </div>      
+    </div>  
+
+        <div class="col-sm-12">
+            <h2 style="font-family: 'Times New Roman';"><i class="fa fa-folder-open"></i><b> Workspace</b></h2>
+        </div>
 
 	   <div class="row" id="myDIV">
         <div class="col-sm-12">
-            <h2 style="font-family: 'Times New Roman';"><i class="fa fa-folder-open"></i><b> Accounting</b></h2>
+            <h2 style="font-family: 'Times New Roman';"><i class="fa fa-folder-open"></i><b> Workspace</b></h2>
         </div>
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->

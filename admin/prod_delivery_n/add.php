@@ -1,88 +1,134 @@
 <?php 
-    $menu_active =150;
-    $left_active =0;
+    $menu_active =11;
+    $left_menu =4;
     $layout_title = "Add Page";
     include_once '../../config/database.php';
     include_once '../../config/athonication.php';
     include_once '../layout/header.php';
 ?>
 
+<?php
+if (isset($_POST['btn_submit'])) {
+    $v_dv_date = @$_POST['txt_date'];
+    $v_dv_no = @$_POST['txt_number'];
+    $v_dv_customer = @$_POST['cbo_customer'];
+    $v_dv_po = @$_POST['cbo_dv_po'];
+    $v_dv_by = @$_POST['txt_by'];
+    $v_dv_by_num = @$_POST['txt_by_num'];
+    $v_type_dv = @$_POST['cbo_type_dv'];
+    $v_user_id = @$_SESSION['user']->user_id;
 
-
-<?php 
-    if(isset($_POST['btn_submit'])){
-        $v_date_record = @$_POST['txt_date_record'];
-        $v_title = @$_POST['txt_title'];
-        $v_sub = @$_POST['txt_sub'];
-        $v_desctiption = @$_POST['txt_description'];
-        $v_leader = @$_POST['txt_leader'];
-        $v_gorup = @$_POST['txt_group'];
-        $v_date_start = @$_POST['txt_date_start'];
-        $v_date_end = @$_POST['txt_date_end'];
-        $v_amount = @$_POST['txt_amount'];
-        $v_note = @$_POST['txt_note'];
-        $v_user_id = @$_SESSION['user']->user_id;
-        
-
-        $query_add = "INSERT INTO tbl_pj_project_initiation (
-                pini_date_record,
-                pini_project_title,
-                pini_project_sub,
-                pini_description,
-                pini_leader,
-                pini_group,
-                pini_date_start,
-                pini_date_finish,
-                pini_amount,
-                pini_note,
-                user_id                
+    $query_add_1 = "INSERT INTO tbl_prod_dv (
+                dv_no,
+                dv_date,
+                dv_cus_id,
+                dv_po_id,
+                dv_by,
+                dv_by_num,
+                dv_type_id,
+                user_id
                 ) 
-            VALUES(
-                '$v_date_record',
-                '$v_title',
-                '$v_sub',
-                '$v_desctiption',
-                '$v_leader',
-                '$v_gorup',
-                '$v_date_start',
-                '$v_date_end',
-                '$v_amount',
-                '$v_note',
+            VALUES
+                (
+                '$v_dv_no',
+                '$v_dv_date',
+                '$v_dv_customer',
+                '$v_dv_po',
+                '$v_dv_by',
+                '$v_dv_by_num',
+                '$v_type_dv',
                 '$v_user_id'
                 )";
-        if($connect->query($query_add)){
-            $sms = '<div class="alert alert-success">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <strong>Successfull!</strong> Data inserted ...
-            </div>'; 
-        }else{
-            $sms = '<div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <strong>Error!</strong> Query error ...
-            </div>';   
+    if ($connect->query($query_add_1)) {
+        $flag_1 = 1;
+        $v_id = $connect->insert_id;
+    } else {
+        echo 'Error';
+        die();
+    }
+
+    $v_pol_name =       @$_POST['txt_name'];
+    $v_pol_feature =    @$_POST['txt_feature'];
+    $v_pol_length =     @$_POST['txt_length'];
+    $v_pol_width =      @$_POST['txt_width'];
+    $v_pol_thickness =  @$_POST['txt_thickness'];
+    $v_pol_pcs_slab =   @$_POST['txt_pcs_slab'];
+    $v_pol_m2=          @$_POST['txt_mater_kare'];
+    $v_pol_note=        @$_POST['txt_note1'];
+
+    foreach ($v_pol_name as $key => $value) {
+        if ($value) {
+            $new_pol_name =     $v_pol_name[$key];
+            $new_pol_feature =  $v_pol_feature[$key];
+            $new_pol_length =   $v_pol_length[$key];
+            $new_pol_width =    $v_pol_width[$key];
+            $new_pol_thickness =$v_pol_thickness[$key];
+            $new_pol_pcs_slab = $v_pol_pcs_slab[$key];
+            $new_pol_m2=        $v_pol_m2[$key];
+            $new_pol_note=      $v_pol_note[$key];
+            
+            $query_add = "INSERT INTO tbl_prod_dv_list (
+                        dvl_dv_id,
+                        dvl_name,
+                        dvl_feature,
+                        dvl_length,
+                        dvl_width,
+                        dvl_thickness,
+                        dvl_pcs_slab,
+                        dvl_m2,
+                        dvl_note
+                        ) 
+                    VALUES
+                        (
+                        '$v_id',
+                        '$new_pol_name',
+                        '$new_pol_feature',
+                        '$new_pol_length',
+                        '$new_pol_width',
+                        '$new_pol_thickness',
+                        '$new_pol_pcs_slab',
+                        '$new_pol_m2',
+                        '$new_pol_note'
+                        )";
+
+            $flag = $connect->query($query_add);
         }
     }
 
- ?>
+    if ($flag_1 == 1 && $flag) {
+        $sms = '<div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Successfull!</strong> Data inserted ...
+            </div>';
+    } else {
+        $sms = '<div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Error!</strong> Query error ...
+            </div>';
+    }
+}
+
+?>
 
 
 <div class="portlet light bordered">
     <div class="row">
-        <div class="col-xs-12">
-            <?= @$sms ?>
-            <h2><i class="fa fa-plus-circle fa-fw"></i>Create Record</h2>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <?= @$sms; ?>
+                <h2>
+                    <ol class="breadcrumb text-leght">       
+                        <li class="breadcrumb-item"><h2><i class="fa fa-plus-circle fa-fw"></i></h2></li>
+                        <li class="breadcrumb-item active">Create  Record</li>
+                    </ol>
+                </h2>            
         </div>
-    </div>
-    
-    <br>
-    <br>
-
-    <div class="portlet-title">
-        <div class="caption font-dark">
-            <a href="index.php" id="sample_editable_1_new" class="btn red"> 
-                <i class="fa fa-arrow-left"></i>
-                Back
-            </a>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">            
+                <h2>
+                    <ol class="breadcrumb text-right">       
+                        <li class="breadcrumb-item"><p id="pono_code"></p></li>
+                        <li class="breadcrumb-item active">Delivery Note</li>
+                    </ol>
+                </h2>
         </div>
     </div>
     <div class="portlet-body">
@@ -91,77 +137,185 @@
                 <h3 class="panel-title">Input Information</h3>
             </div>
             <div class="panel-body">
-                 <form action="#" method="post" enctype="multipart/form-data">
-                    <div class="form-body">
+                <form action="#" method="post" accept-charset="utf-8">
+                    
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <div class="form-group ">
-                                    <label>Date Record : </label>
-                                    <input type="text" class="form-control" name="txt_date_record" data-provide="datepicker" data-date-format="yyyy-mm-dd"  autocomplete="off" value="<?= date('Y-m-d') ?>" required="required">
-                                </div>
-                                <div class="form-group ">
-                                    <label>Project Title : </label>
-                                    <select name="txt_title" id="input" class="form-control" required="">
+                                    <label>Customer Name : </label>
+                                    <select name="cbo_customer" id="input" class="form-control myselect2" required="required">
                                         <option value="">=== Select Project Title ===</option>
                                         <?php 
-                                            $sql=$connect->query("SELECT * FROM tbl_pj_project_title ORDER BY pti_project_title");
+                                            $sql=$connect->query("SELECT * FROM tbl_cus_customer_info ORDER BY cussi_id");
                                             while ($row=mysqli_fetch_object($sql)) {
-                                                echo '<option value="'.$row->pti_id.'">'.$row->pti_project_title.'</option>';
+                                                echo '<option value="'.$row->cussi_id.'">'.$row->cus_code.' || '.$row->cussi_name.'</option>';
                                             }
                                          ?>
                                     </select>
                                 </div>
                                 <div class="form-group ">
-                                    <label>Project Sub : </label>
-                                    <input type="text" class="form-control" name="txt_sub"  autocomplete="off" required="required">
+                                    <label>Address : </label>
+                                    <input type="text" class="form-control" name="txt_address" autocomplete="off" readonly="" id="txt_address">
                                 </div>
-                                <div class="form-group ">
-                                    <label>Description : </label>
-                                    <input type="text" class="form-control" name="txt_description"  autocomplete="off" required="required">
+                                <div class="form-group col-sm-6">
+                                    <label>Phone : </label>
+                                    <input type="text" class="form-control" name="txt_pho_num" autocomplete="off" readonly="" id="txt_pho_num">
                                 </div>
-                                <div class="form-group">
-                                    <label>Leader : </label>
-                                    <select name="txt_leader" class="form-control" required="required">
-                                        <option value="">--leader--</option>
-                                        <?php 
-                                            $get_leader = $connect->query("SELECT * FROM tbl_pj_leader ORDEr BY dlead_name ASC");
-                                            while ($row_leader = mysqli_fetch_object($get_leader)) {
-                                                echo '<option value="'.$row_leader->dlead_id.'">'.$row_leader->dlead_name.'</option>';
-                                            }
-                                        ?>
-                                    </select>
-                                </div>
-                                <div class="form-group ">
-                                    <label>Group : </label>
-                                    <input type="text" class="form-control" name="txt_group"  autocomplete="off" required="required">
+                                <div class="form-group col-sm-6">
+                                    <label>Email : </label>
+                                    <input type="text" class="form-control" name="txt_email" autocomplete="off" readonly="" id="txt_email">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                
                                 <div class="form-group ">
-                                    <label>Start Date :  </label>
-                                    <input type="text" class="form-control" name="txt_date_start" data-provide="datepicker" data-date-format="yyyy-mm-dd"  autocomplete="off" placeholder="date start" required="required">
-                                </div>
-                                <div class="form-group ">
-                                    <label>Finish Date :  </label>
-                                    <input type="text" class="form-control" name="txt_date_end" data-provide="datepicker" data-date-format="yyyy-mm-dd"  autocomplete="off" placeholder="date end" required="required">
-                                </div>
-                                <div class="form-group " placeholder="date end">
-                                    <label>Amount :  </label>
-                                    <input type="text" class="form-control" name="txt_amount"  autocomplete="off" required="required">
-                                </div>
-                                <div class="form-group ">
-                                    <label>Note :  </label>
-                                    <input type="text" class="form-control" name="txt_note"  autocomplete="off" required="required">
-                                </div>
+                                    <label>Type Delivery: </label>
+                                        <select name="cbo_type_dv" id="input" class="form-control myselect2" required="required">
+                                            <option value="">*** Select and choose ***</option>
+                                            <?php 
+                                                $v_result=$connect->query("SELECT * FROM tbl_prod_type_dv ORDER BY tdv_id");
+                                                while ($row_select=mysqli_fetch_object($v_result)) {
+                                                echo '<option data_code="'.$row_select->tdv_code.'" value="'.$row_select->tdv_id.'">'.$row_select->tdv_code.' || '.$row_select->tdv_name_kh.'|| '.$row_select->tdv_name_en.'</option>';
 
+                                                }
+                                             ?>
+                                        </select>
+                                </div>
+                                <div class="form-group col-sm-6 ">
+                                    <label>DV No :  </label>
+                                    <input type="text" class="form-control" name="txt_number" readonly="">
+
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label>Date Record : </label>
+                                    <input type="text" class="form-control" name="txt_date" data-provide="datepicker" data-date-format="yyyy-mm-dd"  autocomplete="off" value="<?= date('Y-m-d') ?>" required="required">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label>Customer ID.:  </label>
+                                    <input type="text" class="form-control" name="txt_cus_id"  autocomplete="off" readonly="">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label>PO Code.:  </label>
+                                    <select name="cbo_dv_po" id="input" class="form-control myselect2" required="required">
+                                        <option value="">=== Select Project Title ===</option>
+                                        <?php 
+                                            $sql=$connect->query("SELECT * FROM tbl_prod_add_po as A
+                                                LEFT JOIN tbl_cus_customer_info AS C ON C.cussi_id=A.po_customer
+                                                ORDER BY po_id");
+                                            while ($row=mysqli_fetch_object($sql)) {
+                                                echo '<option value="'.$row->po_id.'">'.$row->po_no.' || '.$row->cussi_name.'</option>';
+                                            }
+                                         ?>
+                                    </select>
+                                </div>
                             </div>
                         </div>
+                    
+                    <hr>
+                    <div class="portlet-body">
+                        <div class="bs-example" data-example-id="bordered-table">
+                    <table id="myTable" class="table table-bordered myFormDetail_ns">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="width: 10%;">Name<br>(Tên)</th>
+                                <th class="text-center" style="width: 20%;">Feature<br>(Đặc tính)</th>
+                                <th class="text-center">បណ្ដោយ <br> Dài</th>
+                                <th class="text-center">ទទឹង <br> Rộng</th>
+                                <th class="text-center">កម្រាស់ <br> PRICE</th>
+                                <th class="text-center">សន្លឹក <br> Số Tấm</th>
+                                <th class="text-center">ម៉ែតការ៉េ  <br> M2</th>
+                                <th class="text-center">សំគ្គាល់  <br> Others</th>
+                                <th class="text-center"> <i class="fa fa-cog fa-spin"></i> Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="my_form_base" style="background: red; display: none;">
+                                <td>
+                                    <input type="text" name="txt_name[]" class="form-control">
+                                </td>
+                                <td>
+                                    <select class="form-control" name="txt_feature[]">
+                                        <option value="">===  ===</option>
+                                        <?php 
+                                            $v_select = $connect->query("SELECT * FROM tbl_inv_type_make ORDER BY tm_name");
+                                            while ($row_data = mysqli_fetch_object($v_select)) {
+                                                echo '<option value="'.$row_data->tm_id.'">'.$row_data->tm_code.' || '.$row_data->tm_name.'</option>';
+                                            }
+                                         ?>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" onchange="changeLenght(this)" onkeyup="changeLenght(this)" step="1" name="txt_length[]" class="form-control"value="1" autocomplete="off" >
+                                </td>
+                                <td>
+                                    <input type="number" onchange="changeWidth(this)" onkeyup="changeWidth(this)" step="60" name="txt_width[]" class="form-control" value="60">
+                                </td>
+                                <td>
+                                    <input type="number" step="1.8" name="txt_thickness[]" class="form-control"value="1.80">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" onchange="totalslep(this);" onkeyup="totalslep(this);" class="form-control" value="0" name="txt_pcs_slab[]">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" onchange="totalAmount(this)" onkeyup="totalAmount(this)" class="form-control" value="0" name="txt_mater_kare[]">
+                                </td>
+                                <td>
+                                    <input type="text" name="txt_note1[]" class="form-control" >
+                                </td>
+                                <td class="text-center">
+                                    <button class="btnDelete btn btn-info"><i class="fa fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                               
+                                <th style="visibility: hidden;"></th>
+                                <th style="visibility: hidden;"></th>
+                                <th style="visibility: hidden;"></th>
+                                <th style="visibility: hidden;"></th>
+                                <th class="text-right">សរុប <br>TOTAL M <sup>2</sup></th>
+                                <th ><input type="text" name="txt_total_slep" readonly="" id="totalslepeds" class="form-control" value="0" required="required" pattern="" title=""></th>
+                                <th ><input type="text" name="txt_total_amo" readonly="" id="inputTxt_total_amo" class="form-control" value="0" required="required" pattern="" title=""></th>
+                                <th style="visibility: hidden;"></th>
+                                <th style="visibility: hidden;"></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                        </div>
                     </div>
+                    <br>
+                   
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group ">
+                                    <label>Note : </label>
+                                    <input type="text" class="form-control" name="txt_note"  style="height: 100px;"  autocomplete="off" required="required">
+                                </div>
+                                
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group col-sm-6">
+                                    <label>By Date : </label>
+                                    <input type="text" class="form-control" name="txt_date_line" data-provide="datepicker" data-date-format="yyyy-mm-dd"  autocomplete="off" value="<?= date('Y-m-d') ?>" required="required">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label>By to : </label>
+                                    <input type="text" class="form-control" name="txt_by"  autocomplete="off" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label>By Number: </label>
+                                    <input type="text" class="form-control" name="txt_by_num"  autocomplete="off" required="required">
+                                </div>
+                            </div>
+                        </div>
+                    <br>
                     <div class="form-actions">
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <button type="submit" name="btn_submit" class="btn blue"><i class="fa fa-save fa-fw"></i>Save</button>
-                                <a href="index.php" class="btn red"><i class="fa fa-undo fa-fw"></i>Cancel</a>
+                                <button type="submit" name="btn_submit" class="btn green"><i class="fa fa-save fa-fw"></i>Save & New</button>
+                                <div id="add_more" class="btn btn-default yellow btn-md" title="Click on this button to add more record !">[<i class="fa fa-plus"></i>]</div>
+                                <a href="index.php?action=2" class="btn red"><i class="fa fa-undo fa-fw"></i>Cancel</a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +324,149 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="../../assets/global/plugins/jquery.min.js"></script>
+<script type="text/javascript">
+    //Refresh Cmbobox
+    $('div#refresh_cbo_counter').click(function(){
+        $.ajax({url: "ajax_get_content_select.php?d=cbo_counter", success: function(result){
+            if($('select[name="cbo_counter"]').html().trim() != result.trim()){
+                $('select[name="cbo_counter"]').html(result);
+                myAlertInfo("Your refresh item successfully !");
+            }
+        }});
+    });
+
+    var index_row = 1;
+    $('#add_more').click(function() {
+        $('#myTable').append('<tr data-row-id="' + (++index_row) + '">' + $('.my_form_base').html() + '</tr>');
+        $('tr[data-row-id=' + index_row + ']').find('select').select2({
+            width: 'auto'
+        });
+    });
+
+    setTimeout(function() {
+        $('#add_more').click();
+    }, 2000);
+
+    $("tbody").on('click', '.btnDelete', function() {
+        var rowCount = $('tbody>tr').length;
+        if (rowCount < 3) {
+            alert("You can not delete this record.");
+            return;
+        }
+        $(this).parents('tr').remove();
+    });
+
+    $(document).ready(function(){
+        $('select[name="cbo_customer"]').change(function () {
+            let v_chart_acc_id=$(this).val();
+            let myArr=[1,v_chart_acc_id];
+            $.ajax({url: 'ajax_get_rec_info.php',
+                    type: 'POST',
+                    async: false,
+                    data: 'data='+myArr,
+                success:function (result) {
+               last_result=result;
+           }});
+           var myObj=JSON.parse(last_result);
+           $('input[name="txt_cus_id"]').val(myObj['code']);
+           $('input[name="txt_email"]').val(myObj['email']);
+           $('input[name="txt_address"]').val(myObj['address']);
+           $('input[name="txt_pho_num"]').val(myObj['phone']);
+
+       });
+    });
+
+    function totalAmount (obj) {
+        var t_amo=0;
+        $('input[name^="txt_mater_kare"]').each(function () {
+            t_amo+= parseFloat($(this).val());
+        });
+        $('tfoot >tr:first-child').find('th:nth-last-child(3) >input[name=txt_total_amo]').val(t_amo.toFixed(3));
+    }
+    function totalslep (obj) {
 
 
 
-<?php include_once '../layout/footer.php' ?>
+        var t_amo1=0;
+        $('input[name^="txt_pcs_slab"]').each(function () {
+            t_amo1+= parseFloat($(this).val());
+        });
+        $('tfoot >tr:first-child').find('th:nth-last-child(4) >input[name=txt_total_slep]').val(t_amo1.toFixed(3));
+
+        let v_length=$(args).parents('tbody >tr').find('td:nth-child(3) >input').val();
+        let v_width=$(args).parents('tbody >tr').find('td:nth-child(4) >input').val();
+        let v_pc=$(args).val();
+        let v_mater_cub=cal_mater(v_length,v_width,v_pc);
+        $(args).parents('tbody >tr').find('td:nth-child(7) >input').val(v_mater_cub);
+
+    }
+    function changepono () {
+        $v_pono=$('input[name=txt_number]').val();
+
+        document.getElementById("pono_code").innerHTML = '#'+$v_pono;
+
+    }
+    function set_iframe_counter(){
+        document.getElementById('result_modal').src = '../inv_counter_list/index.php?view=iframe';
+    }
+    $zerol=0;
+    document.getElementById("pono_code").innerHTML ='#'+$zerol;
+
+  
+</script>
+<script>
+    $(document).ready(function(){
+        $('select[name=cbo_type_dv]').change(function () {
+            var code_vouch=$(this).find('option:selected').attr('data_code');
+            var v_date=my_getDate($('input[name=txt_date]').val());
+            var vou_id=$(this).val();
+            var myObject={
+                tdv_id:null,
+                vou_code:code_vouch,
+                v_date:v_date,
+                vou_id:vou_id
+            };
+            
+            var myString =JSON.stringify(myObject);
+            $.ajax({type:'POST',url:"ajx_get_dv.php",data:'data='+myString,success: function(result){
+                var myObj=JSON.parse(result);
+                // alert(result);
+                $('input[name=txt_number]').val(myObj['vou_no']);
+                document.getElementById("pono_code").innerHTML = myObj['vou_no'];
+            }});
+        });
+        $('input[name=txt_date]').datepicker().on('changeDate', function (ev) {
+            $(this).change();
+            var v_date=my_getDate(new Date($(this).val()));
+            var vou_id=$('select[name=cbo_type_dv]').val();
+            var vou_id=$('select[name=cbo_type_dv]').val();
+            code_vouch=$('select[name=cbo_type_dv]').find('option:selected').attr('data_code');
+            var myObject={
+                tdv_id:null,
+                vou_code:code_vouch,
+                v_date:v_date,
+                vou_id:vou_id
+            };
+            var myString =JSON.stringify(myObject);
+            $.ajax({url:"ajx_get_dv.php",type:'POST',data:'data='+myString,success: function(result){
+                var myObj=JSON.parse(result);
+                $('input[name=txt_number]').val(myObj['vou_no']);
+                document.getElementById("pono_code").innerHTML = myObj['vou_no'];
+            }});
+        });
+    });
+</script>
+
+<?php 
+    include_once '../layout/footer.php';
+ ?>
+<div class="modal fade" id="add_modal">
+    <div class="modal-dialog modal-lg" style="width: 50%;">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe id="result_modal" src="" width="100%" style="min-height: 600px; resize: vertical;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>

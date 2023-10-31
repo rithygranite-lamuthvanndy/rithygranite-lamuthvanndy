@@ -275,16 +275,17 @@
                       <form action="index.php" oninput="txt_total8.value=parseInt(txt_name1.value)+parseInt(txt_name2.value)+parseInt(txt_name3.value)">
                       <table width="100%">
                         <tbody>
+                            
                           <tr style="background:  #00ffff;">
                             <td>8/ </td>
                             <td>ចំនួនកម្មករវេន ថ្ងៃ</td>
                             <td>Công nhân (ca ngày) :</td>
-                            <td​><output type="number" for="txt_name1 txt_name2 txt_name3" class="form-control" name="txt_total8" id="txt_total8" placeholder=" " required="required" autocomplete="off" style="background:  #00ffff;"></output></td>
+                            <td><output type="number" for="txt_name1 txt_name2 txt_name3" class="form-control" name="txt_total8" id="txt_total8" placeholder=" " required="required" autocomplete="off" style="background:  #00ffff;"></output></td>
                             <td><input type="text" class="form-control" name="txt_name" placeholder=" " required="required" autocomplete="off" style="background:  #00ffff;"></td>
                           </tr>
                           <tr>
                             <td></td>
-                            <td> - តៃកុង​</td>
+                            <td> - តៃកុង</td>
                             <td>Tài xế  :</td>
                             <td><input type="number" class="form-control" name="txt_name1" id="txt_name1" placeholder=" " required="required" autocomplete="off" value="0"></td>
                             <td><input type="text" class="form-control" name="txt_name" placeholder=" " required="required" autocomplete="off"></td>

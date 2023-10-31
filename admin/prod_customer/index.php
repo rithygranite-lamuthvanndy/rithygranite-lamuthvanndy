@@ -30,7 +30,7 @@
     <div class="portlet-body">
         <div id="sample_1_wrapper" class="dataTables_wrapper">
             <table class="table table-striped table-bordered table-hover dataTable dtr-inline" id="sample_2" role="grid" aria-describedby="sample_1_info" style="width: 1180px;">
-                <thead>
+                <thead style="background-color: #CCFFFF;">
                     <tr role="row" class="text-center">
                         <th>N&deg;</th>
                         <th>Customer Code</th>
@@ -57,14 +57,14 @@
                             FROM tbl_cus_customer_info AS A 
                             LEFT JOIN tbl_cus_type AS B ON B.cusct_id=A.cussi_type 
                             WHERE (A.user_id='$v_user_id')
-                            ORDER BY audit DESC");
+                            ORDER BY cus_code DESC");
                         }
                         else{
                             $get_data = $connect->query("SELECT 
                                *,A.date_audit AS audit
                             FROM tbl_cus_customer_info AS A 
                             LEFT JOIN tbl_cus_type AS B ON B.cusct_id=A.cussi_type 
-                            ORDER BY audit DESC");
+                            ORDER BY cus_code DESC");
                         }
                         while ($row = mysqli_fetch_object($get_data)) {
                             echo '<tr>';
